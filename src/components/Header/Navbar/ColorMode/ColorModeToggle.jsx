@@ -1,5 +1,7 @@
+import { ColorModeContainer } from './ColorModeToggle.Styles'
+
 const ColorModeToggle = () => {
-  return <div>COLOR MODE</div>
+  return <ColorModeContainer>COLOR MODE</ColorModeContainer>
 }
 
 export default ColorModeToggle
