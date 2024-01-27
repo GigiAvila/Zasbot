@@ -40,13 +40,13 @@ export const NavElement = styled.li`
   }
 
   > * {
-    color: black;
+    color: #040404;
     font-size: 1vw;
     padding: 0.5vw;
   }
 
   > *:hover {
-    color: red;
+    color: #ffd700;
   }
 
   > * {

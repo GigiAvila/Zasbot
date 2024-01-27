@@ -39,9 +39,9 @@ const Navbar = () => {
       <NavList menuOpen={menuOpen}>
         <NavElement onClick={toggleMenu}>
           {!isHome ? (
-            <Link to='/home'>Nosotros</Link>
+            <Link to='/home'>Producto</Link>
           ) : (
-            <a href='#resume'>Nosotros</a>
+            <a href='#resume'>Producto</a>
           )}
         </NavElement>
         <NavElement onClick={toggleMenu}>

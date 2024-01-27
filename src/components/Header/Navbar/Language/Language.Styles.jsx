@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const LanguageContainer = styled.div`
+export const LanguageContainer = styled.select`
   display: flex;
 
   @media (max-width: 768px) {
