@@ -16,15 +16,22 @@ import {
 import HomeImg from './Assets/Home.png'
 import ArrowImg from './Assets/Arrow.png'
 import WhatsappButton from '../WhatsappButton/WhatsappButton'
+import { useTheme } from '../../hooks/UseTheme'
 
 const Home = () => {
+  const { currentTheme } = useTheme()
+
   return (
-    <HomeSection id='home'>
-      <HomeTextArticle>
+    <HomeSection id='home' theme={{ currentTheme }}>
+      <HomeTextArticle theme={{ currentTheme }}>
         <h1>{HOME_TEXT}</h1>
         <h3>{HOME_SLOGAN}</h3>
-        <HomeForm action='POST'>
-          <HomeInput type='email' placeholder={HOME_INPUT_TEXT} />
+        <HomeForm action='POST' theme={{ currentTheme }}>
+          <HomeInput
+            type='email'
+            placeholder={HOME_INPUT_TEXT}
+            theme={{ currentTheme }}
+          />
           <HomeButton type='submit'>
             <p>{HOME_BUTTON_TEXT}</p>
             <HomeButtonImgWrapper>

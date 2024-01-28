@@ -1,3 +1,5 @@
+export const META_DESCRIPTION = 'Lorem ipsum'
+
 export const HOME_SLOGAN = 'Lorem ipsum dolor sit amet, consectetur adipiscing'
 export const HOME_TEXT = 'Lorem ipsum dolor sit amet, consectetur adip'
 

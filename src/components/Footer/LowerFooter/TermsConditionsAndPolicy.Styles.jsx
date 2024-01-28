@@ -9,17 +9,19 @@ export const ConditionsContainer = styled.section`
   padding: 1vw 0.5vw;
 `
 
-export const TermsConditionsAndPolicyContainer = styled.article`
+export const TermsConditionsAndPolicyText = styled.a`
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 1vw;
-`
-
-export const TermsConditionsAndPolicyText = styled.p`
   font-weight: bold;
   font-size: 0.8vw;
+  letter-spacing: 0.07rem;
+
+  > p {
+    color: ${({ theme }) => theme.currentTheme['--text-200']};
+  }
 
   @media (max-width: 768px) {
     font-size: 1.8vw;
@@ -29,6 +31,8 @@ export const TermsConditionsAndPolicyText = styled.p`
 export const CopyrightText = styled.p`
   font-weight: 400;
   font-size: 0.8vw;
+  letter-spacing: 0.07rem;
+  color: ${({ theme }) => theme.currentTheme['--text-100']};
 
   @media (max-width: 768px) {
     font-size: 1.8vw;

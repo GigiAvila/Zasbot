@@ -1,5 +1,6 @@
-export const HOME_TEXT = 'Tu asistente virtual a medida'
+export const META_DESCRIPTION = 'Lorem ipsum'
 
+export const HOME_TEXT = 'Tu asistente virtual a medida'
 export const HOME_SLOGAN =
   'Zasbot es un chatbot a medida que te permitirá conectar con tus clientes y aumentar tu ventas en simples pasos'
 

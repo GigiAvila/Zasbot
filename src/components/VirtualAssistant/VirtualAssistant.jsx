@@ -5,11 +5,14 @@ import {
   AssistantTitleArticle,
   AssistantImageContainer,
   VirtualAssistantText,
-  VirtualAssistantButton
+  VirtualAssistantButton,
+  VirtualAssistantContent
 } from './VirtualAssistant.Styles'
 import AssistantImg from './Assests/Assistant.png'
+import { useTheme } from '../../hooks/UseTheme'
 
 const VirtualAssistant = ({ toggleAssistant }) => {
+  const { currentTheme } = useTheme()
   const [message, setMessage] = useState('')
 
   const handleInputChange = (event) => {
@@ -23,23 +26,32 @@ const VirtualAssistant = ({ toggleAssistant }) => {
   }
 
   return (
-    <AssistantContainer toggleAssistant={toggleAssistant}>
-      <AssistantTitleArticle>
+    <AssistantContainer
+      toggleAssistant={toggleAssistant}
+      theme={{ currentTheme }}
+    >
+      <AssistantTitleArticle theme={{ currentTheme }}>
         <AssistantImageContainer>
           <img src={AssistantImg} alt='AsistantAvatar' />
         </AssistantImageContainer>
         <h5>Virtual Assistant</h5>
       </AssistantTitleArticle>
-      <VirtualAssistantText
-        rows='6'
-        cols='40'
-        placeholder='Write whatever you need'
-        value={message}
-        onChange={handleInputChange}
-      ></VirtualAssistantText>
-      <VirtualAssistantButton onClick={handleSendClick}>
-        Send
-      </VirtualAssistantButton>
+      <VirtualAssistantContent>
+        <VirtualAssistantText
+          rows='6'
+          cols='40'
+          placeholder='Write whatever you need'
+          value={message}
+          onChange={handleInputChange}
+          theme={{ currentTheme }}
+        ></VirtualAssistantText>
+        <VirtualAssistantButton
+          onClick={handleSendClick}
+          theme={{ currentTheme }}
+        >
+          Send
+        </VirtualAssistantButton>
+      </VirtualAssistantContent>
     </AssistantContainer>
   )
 }

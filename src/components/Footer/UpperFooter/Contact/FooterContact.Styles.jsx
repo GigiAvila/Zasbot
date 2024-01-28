@@ -8,7 +8,7 @@ export const ContactFooterContainer = styled.div`
   width: 20vw;
   padding-right: 2vw;
   border-radius: 10px;
-  background-color: #f2f2f2;
+  background-color: ${({ theme }) => theme.currentTheme['--bg-300']};
   border-top: 1vw;
 
   @media (max-width: 768px) {
@@ -18,27 +18,27 @@ export const ContactFooterContainer = styled.div`
 
 export const ContactFooterTextWrapper = styled.div`
   padding: 1vw;
-`
 
-export const ContactFooterTitle = styled.h3`
-  line-height: 2.5;
-  font-weight: bold;
-  font-size: 1vw;
-  color: black;
+  > h3 {
+    line-height: 2.5;
+    font-weight: bold;
+    font-size: 1vw;
+    color: ${({ theme }) => theme.currentTheme['--text-100']};
 
-  @media (max-width: 768px) {
-    font-size: 2vw;
+    @media (max-width: 768px) {
+      font-size: 2vw;
+    }
   }
-`
-export const ContactFooterText = styled.h5`
-  font-weight: 200;
-  padding: 1vw 0;
-  line-height: 2;
-  font-size: 0.9vw;
-  color: black;
+  > h5 {
+    font-weight: 200;
+    padding: 1vw 0;
+    line-height: 2;
+    font-size: 0.9vw;
+    color: ${({ theme }) => theme.currentTheme['--text-200']};
 
-  @media (max-width: 768px) {
-    font-size: 2vw;
+    @media (max-width: 768px) {
+      font-size: 2vw;
+    }
   }
 `
 export const ContactButton = styled.button`

@@ -10,14 +10,18 @@ import {
   CompanyTextFooter,
   CompanyContactInformationContainer
 } from './CompanyInfo.Styles'
+import { useTheme } from '../../../../hooks/UseTheme'
 
 const CompanyInfo = () => {
+  const { currentTheme } = useTheme()
   return (
     <CompanyContainer>
       <CompanyDataContainer>
         <CompanyName />
-        <CompanyTextFooter>{HOME_SLOGAN}</CompanyTextFooter>
-        <CompanyContactInformationContainer>
+        <CompanyTextFooter theme={{ currentTheme }}>
+          {HOME_SLOGAN}
+        </CompanyTextFooter>
+        <CompanyContactInformationContainer theme={{ currentTheme }}>
           <h3>{FOOTER_COMPANY_EMAIL}</h3>
           <h3>{FOOTER_COMPANY_PHONE}</h3>
         </CompanyContactInformationContainer>

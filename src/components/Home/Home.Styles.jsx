@@ -3,10 +3,10 @@ import styled from 'styled-components'
 export const HomeSection = styled.section`
   width: 100vw;
   height: 100vh;
-  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: ${({ theme }) => theme.currentTheme['--bg-100']};
 `
 export const HomeTextArticle = styled.article`
   display: flex;
@@ -16,10 +16,12 @@ export const HomeTextArticle = styled.article`
 
   > h1 {
     font-size: 4vw;
+    color: ${({ theme }) => theme.currentTheme['--primary-100']};
   }
 
   > h3 {
     font-size: 1.5vw;
+    color: ${({ theme }) => theme.currentTheme['--primary-200']};
   }
 `
 
@@ -37,7 +39,7 @@ export const HomeImgArticle = styled.article`
 export const HomeForm = styled.form`
   display: flex;
   border-radius: 5px;
-  border: 1px solid grey;
+  border: 1px solid ${({ theme }) => theme.currentTheme['--accent-100']};
   padding: 0.3vw;
   width: 30vw;
 `
@@ -48,8 +50,10 @@ export const HomeInput = styled.input`
   border-radius: 5px;
   border: none;
   outline: none;
+  background-color: ${({ theme }) => theme.currentTheme['--bg-100']};
 
   &::placeholder {
+    color: ${({ theme }) => theme.currentTheme['--text-200']};
   }
 `
 

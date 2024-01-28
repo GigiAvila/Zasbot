@@ -5,13 +5,21 @@ import {
   MoonIcon,
   SunIcon
 } from './ColorModeToggle.Styles'
+import { useTheme } from '../../../../hooks/UseTheme'
 
 const ColorModeToggle = () => {
+  const { toggleTheme, isDarkMode } = useTheme()
+
   return (
     <ColorModeContainer>
       <div className='container'>
         <Label htmlFor='switch'>
-          <Input id='switch' type='checkbox' />
+          <Input
+            id='switch'
+            type='checkbox'
+            checked={isDarkMode}
+            onChange={toggleTheme}
+          />
           <MoonIcon className='icon icon--moon'>
             <svg
               height='22'
@@ -27,7 +35,6 @@ const ColorModeToggle = () => {
               ></path>
             </svg>
           </MoonIcon>
-
           <SunIcon className='icon icon--sun'>
             <svg
               height='22'
