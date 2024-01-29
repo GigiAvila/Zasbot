@@ -7,6 +7,11 @@ export const HOME_SLOGAN =
 export const HOME_INPUT_TEXT = 'Ingresa tu correo'
 export const HOME_BUTTON_TEXT = 'Enviame información'
 
+export const NAVBAR_PRODUCT = 'Producto'
+export const NAVBAR_CLIENTS = 'Clientes'
+export const NAVBAR_CONTACT = 'Contacto'
+export const NAVBAR_PRICES = 'Precios'
+
 export const FOOTER_COMPANY_EMAIL = 'info@zasbot.com'
 export const FOOTER_COMPANY_PHONE = '+34 636595002'
 

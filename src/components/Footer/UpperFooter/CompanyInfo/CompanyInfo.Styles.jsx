@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const CompanyContainer = styled.div`
+export const CompanyContainer = styled.article`
   display: flex;
   flex-direction: column;
   align-items: flex-start;

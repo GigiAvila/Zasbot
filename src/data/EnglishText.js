@@ -6,6 +6,11 @@ export const HOME_TEXT = 'Lorem ipsum dolor sit amet, consectetur adip'
 export const HOME_INPUT_TEXT = 'Introduce your email'
 export const HOME_BUTTON_TEXT = 'Send info'
 
+export const NAVBAR_PRODUCT = 'Product'
+export const NAVBAR_CLIENTS = 'Clients'
+export const NAVBAR_CONTACT = 'Contact'
+export const NAVBAR_PRICES = 'Prices'
+
 export const FOOTER_COMPANY_EMAIL = 'info@zasbot.com'
 export const FOOTER_COMPANY_PHONE = '+34 636595002'
 

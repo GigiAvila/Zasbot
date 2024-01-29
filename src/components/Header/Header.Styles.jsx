@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 
 export const Headers = styled.header`
-  background-color: rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid #f2f2f2;
+  background-color: ${({ theme }) =>
+    `rgba(${theme.currentTheme['--bg-100'].slice(1)}, 0.5)`};
+  border-bottom: 1px solid ${({ theme }) => theme.currentTheme['--primary-300']};
   backdrop-filter: blur(10px);
   display: flex;
   align-items: center;

@@ -2,11 +2,20 @@ import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import ColorModeToggle from './ColorMode/ColorModeToggle'
 import Language from './Language/Language'
+import {
+  NAVBAR_PRODUCT,
+  NAVBAR_CLIENTS,
+  NAVBAR_CONTACT,
+  NAVBAR_PRICES
+} from '../../../data/SpanishText.js'
 import { Nav, NavList, NavElement, MenuIconContainer } from './Navbar.Styles'
-import MenuIcon from './Assets/menu.svg' // Importa directamente como cadena
-import CloseMenuIcon from './Assets/close.svg' // Importa directamente como cadena
+import MenuIcon from './Assets/menu.svg'
+import CloseMenuIcon from './Assets/close.svg'
+import { useTheme } from '../../../hooks/UseTheme'
 
 const Navbar = () => {
+  const { currentTheme } = useTheme()
+
   const location = useLocation()
   const isHome = location.pathname === '/home'
   const [menuOpen, setMenuOpen] = useState(false)
@@ -37,25 +46,25 @@ const Navbar = () => {
         </MenuIconContainer>
       )}
       <NavList menuOpen={menuOpen}>
-        <NavElement onClick={toggleMenu}>
+        <NavElement onClick={toggleMenu} theme={{ currentTheme }}>
           {!isHome ? (
-            <Link to='/home'>Producto</Link>
+            <Link to='/home'>{NAVBAR_PRODUCT}</Link>
           ) : (
-            <a href='#resume'>Producto</a>
+            <a href='#resume'>{NAVBAR_PRODUCT}</a>
           )}
         </NavElement>
-        <NavElement onClick={toggleMenu}>
+        <NavElement onClick={toggleMenu} theme={{ currentTheme }}>
           {!isHome ? (
-            <Link to='/home'>Clientes</Link>
+            <Link to='/home'>{NAVBAR_CLIENTS}</Link>
           ) : (
-            <a href='#testimonies'>Clientes</a>
+            <a href='#testimonies'>{NAVBAR_CLIENTS}</a>
           )}
         </NavElement>
-        <NavElement onClick={toggleMenu}>
-          <Link to='/contact'>Contacto</Link>
+        <NavElement onClick={toggleMenu} theme={{ currentTheme }}>
+          <Link to='/contact'>{NAVBAR_CONTACT}</Link>
         </NavElement>
-        <NavElement onClick={toggleMenu}>
-          <Link to='/prices'>Precios</Link>
+        <NavElement onClick={toggleMenu} theme={{ currentTheme }}>
+          <Link to='/prices'>{NAVBAR_PRICES}</Link>
         </NavElement>
       </NavList>
       <Language />

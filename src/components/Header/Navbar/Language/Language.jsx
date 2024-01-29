@@ -1,10 +1,13 @@
 import { LanguageContainer } from './Language.Styles'
+import { useTheme } from '../../../../hooks/UseTheme'
 
 const Language = () => {
+  const { currentTheme } = useTheme()
+
   return (
-    <LanguageContainer>
-      <option value='spanish'>ES</option>
-      <option value='english'>EN</option>
+    <LanguageContainer theme={{ currentTheme }}>
+      <option value='spanish'>Spanish</option>
+      <option value='english'>English</option>
     </LanguageContainer>
   )
 }

@@ -40,13 +40,13 @@ export const NavElement = styled.li`
   }
 
   > * {
-    color: #040404;
+    color: ${({ theme }) => theme.currentTheme['--text-100']};
     font-size: 1vw;
     padding: 0.5vw;
   }
 
   > *:hover {
-    color: #ffd700;
+    color: ${({ theme }) => theme.currentTheme['--accent-300']};
   }
 
   > * {

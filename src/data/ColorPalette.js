@@ -19,7 +19,7 @@ export const lightPalette = {
   '--primary-300': '#929292', // gris oscuro
   '--accent-100': '#2d2d2d', // gris casi negro
   '--accent-200': '#ddb900', // amarillo
-  '--accent-300': '#2d2d2d', // negro
+  '--accent-300': '#917800', // negro
   '--text-100': '#2d2d2d', // gris casi negro
   '--text-200': '#454545', // gris oscuro
   '--text-300': '#929292', // gris oscuro
