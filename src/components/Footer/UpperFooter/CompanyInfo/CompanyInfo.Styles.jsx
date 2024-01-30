@@ -5,10 +5,11 @@ export const CompanyContainer = styled.article`
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
+  width: auto;
 
-  width: 25vw;
-  padding-left: 2vw @media (max-width: 768px) {
-    width: 30%;
+  @media (max-width: 768px) {
+    width: 50vw;
+    padding: 1vw 0;
   }
 `
 export const CompanyDataContainer = styled.div`
@@ -18,6 +19,11 @@ export const CompanyDataContainer = styled.div`
   justify-content: center;
   gap: 0.6vw;
   width: 25vw;
+
+  @media (max-width: 768px) {
+    width: 50vw;
+    padding: 1vw 0;
+  }
 `
 
 export const CompanyTextFooter = styled.h5`
@@ -41,5 +47,10 @@ export const CompanyContactInformationContainer = styled.div`
     font-size: 1vw;
     letter-spacing: 0.07rem;
     color: ${({ theme }) => theme.currentTheme['--primary-100']};
+
+    @media (max-width: 768px) {
+      font-size: 3.5vw;
+      font-weight: 400;
+    }
   }
 `

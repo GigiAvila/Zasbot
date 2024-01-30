@@ -29,6 +29,7 @@ export const NavList = styled.ul`
     background-color: white;
     height: 100vh;
     padding: 2rem;
+    background-color: ${({ theme }) => theme.currentTheme['--bg-100']};
   }
 `
 export const NavElement = styled.li`

@@ -6,11 +6,11 @@ export const SiteMapSection = styled.article`
   align-items: flex-start;
   justify-content: center;
   gap: 5vw;
-  width: 60vw;
+  width: auto;
   padding-right: 2vw;
 
   @media (max-width: 768px) {
-    width: 100%;
+    width: 100vw;
     align-items: flex-start;
     flex-direction: column;
     gap: 2vw;
@@ -43,7 +43,7 @@ export const SiteSection = styled.li`
   @media (max-width: 768px) {
     font-size: 4vw;
     text-transform: none;
-    width: 85vw;
+    width: 80vw;
     padding: 1vw;
     font-weight: 300;
     cursor: pointer;

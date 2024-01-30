@@ -24,7 +24,9 @@ export const TermsConditionsAndPolicyText = styled.a`
   }
 
   @media (max-width: 768px) {
-    font-size: 1.8vw;
+    font-size: 3vw;
+    letter-spacing: 0.02rem;
+    padding: 1vw 0;
   }
 `
 
@@ -35,6 +37,8 @@ export const CopyrightText = styled.p`
   color: ${({ theme }) => theme.currentTheme['--text-100']};
 
   @media (max-width: 768px) {
-    font-size: 1.8vw;
+    font-size: 3vw;
+    letter-spacing: 0.02rem;
+    padding: 1vw 0;
   }
 `

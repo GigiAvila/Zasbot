@@ -15,6 +15,10 @@ export const AssistantContainer = styled.section`
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   display: ${({ toggleAssistant }) => (toggleAssistant ? 'block' : 'none')};
+
+  @media (max-width: 768px) {
+    bottom: 15vh;
+  }
 `
 
 export const AssistantTitleArticle = styled.article`

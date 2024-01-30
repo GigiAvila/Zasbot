@@ -45,7 +45,7 @@ const Navbar = () => {
           />
         </MenuIconContainer>
       )}
-      <NavList menuOpen={menuOpen}>
+      <NavList menuOpen={menuOpen} theme={{ currentTheme }}>
         <NavElement onClick={toggleMenu} theme={{ currentTheme }}>
           {!isHome ? (
             <Link to='/home'>{NAVBAR_PRODUCT}</Link>

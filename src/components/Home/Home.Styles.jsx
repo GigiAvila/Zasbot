@@ -13,6 +13,7 @@ export const HomeTextArticle = styled.article`
   flex-direction: column;
   gap: 2vw;
   padding: 2vw;
+  width: 50vw;
 
   > h1 {
     font-size: 4vw;
@@ -27,7 +28,7 @@ export const HomeTextArticle = styled.article`
 
 export const HomeImgArticle = styled.article`
   padding: 2vw;
-  width: 70vw;
+  wwidth: 50vw;
   height: auto;
 
   > img {
