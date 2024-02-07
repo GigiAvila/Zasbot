@@ -34,6 +34,7 @@ export const NavList = styled.ul`
 `
 export const NavElement = styled.li`
   display: flex;
+  position: relative;
 
   @media (max-width: 768px) {
     border-bottom: 1px solid #f2f2f2;
@@ -41,13 +42,35 @@ export const NavElement = styled.li`
   }
 
   > * {
+    text-decoration: none;
     color: ${({ theme }) => theme.currentTheme['--text-100']};
     font-size: 1vw;
-    padding: 0.5vw;
+    padding: 0.3vw 0.7vw;
+    position: relative;
+    z-index: 1;
+  }
+
+  > *::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: ${({ theme }) => theme.currentTheme['--accent-400']};
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.1s;
+    z-index: -1;
+    border-radius: 20px;
+  }
+
+  > *:hover::before {
+    width: 100%;
+    height: 100%;
   }
 
   > *:hover {
-    color: ${({ theme }) => theme.currentTheme['--accent-300']};
+    color: ${({ theme }) => theme.currentTheme['--text-400']};
   }
 
   > * {

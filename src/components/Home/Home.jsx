@@ -32,7 +32,7 @@ const Home = () => {
             placeholder={HOME_INPUT_TEXT}
             theme={{ currentTheme }}
           />
-          <HomeButton type='submit'>
+          <HomeButton type='submit' theme={{ currentTheme }}>
             <p>{HOME_BUTTON_TEXT}</p>
             <HomeButtonImgWrapper>
               <img src={ArrowImg} alt='Send Icon' />

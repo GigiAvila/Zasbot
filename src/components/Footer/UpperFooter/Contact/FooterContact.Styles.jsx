@@ -5,11 +5,10 @@ export const ContactFooterContainer = styled.article`
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
-  width: 20vw;
-  padding-right: 2vw;
+  width: 18vw;
   border-radius: 10px;
   background-color: ${({ theme }) => theme.currentTheme['--bg-300']};
-  border-top: 1vw;
+  padding: 0.5vw;
 
   @media (max-width: 768px) {
     display: none;
@@ -46,13 +45,23 @@ export const ContactButton = styled.button`
   justify-content: center;
   align-items: center;
   gap: 0.3vw;
-  background-color: #ffd700;
+  background-color: ${({ theme }) => theme.currentTheme['--accent-400']};
   height: 5vh;
+  outline: none;
+  border: none;
+  cursor: pointer;
 
-  > p {
+  > * {
     font-size: 0.8vw;
     height: 100%;
     display: flex;
     align-items: center;
+    text-decoration: none;
+    color: ${({ theme }) => theme.currentTheme['--text-400']};
+
+    &:hover {
+      text-decoration: none;
+      color: ${({ theme }) => theme.currentTheme['--text-400']};
+    }
   }
 `

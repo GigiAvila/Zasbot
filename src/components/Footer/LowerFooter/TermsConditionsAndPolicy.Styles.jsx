@@ -18,6 +18,7 @@ export const TermsConditionsAndPolicyText = styled.a`
   font-weight: bold;
   font-size: 0.8vw;
   letter-spacing: 0.07rem;
+  text-decoration: none;
 
   > p {
     color: ${({ theme }) => theme.currentTheme['--text-200']};

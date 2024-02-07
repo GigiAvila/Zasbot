@@ -9,6 +9,7 @@ import {
   ContactButton
 } from './FooterContact.Styles'
 import { useTheme } from '../../../../hooks/UseTheme'
+import { Link } from 'react-router-dom'
 
 const FooterContact = () => {
   const { currentTheme } = useTheme()
@@ -18,7 +19,9 @@ const FooterContact = () => {
       <ContactFooterTextWrapper theme={{ currentTheme }}>
         <h3>{FOOTER_CONTACT_TITLE}</h3>
         <h5>{FOOTER_CONTACT_TEXT}</h5>
-        <ContactButton>{FOOTER_CONTACT_BUTTON_TEXT}</ContactButton>
+        <ContactButton theme={{ currentTheme }}>
+          <Link to='/contact'>{FOOTER_CONTACT_BUTTON_TEXT}</Link>
+        </ContactButton>
       </ContactFooterTextWrapper>
     </ContactFooterContainer>
   )
