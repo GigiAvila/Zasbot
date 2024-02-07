@@ -87,6 +87,7 @@ height: auto;
 display: flex;
 justify-content: center;
 align-items: center;
+margin: 2vw;
 
 > img {
   width: 100%;

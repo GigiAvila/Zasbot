@@ -8,6 +8,11 @@ export const FormWrapper = styled.article`
   background-color: ${({ theme }) => theme.currentTheme['--bg-300']};
   border-radius: 8px;
   box-shadow: 1px 1px 50px 4px rgba(0, 0, 0, 0.82);
+
+  @media (max-width: 768px) {
+    width: 90vw;
+    height: auto;
+  }
 `
 
 export const Form = styled.form`
@@ -20,6 +25,10 @@ export const Form = styled.form`
   background-color: ${({ theme }) => theme.currentTheme['--bg-300']};
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+
+  @media (max-width: 768px) {
+    width: 90vw;
+  }
 `
 
 export const Label = styled.label`
@@ -29,6 +38,17 @@ export const Label = styled.label`
 
   > span {
     color: ${({ theme }) => theme.currentTheme['--accent-300']};
+
+    @media (max-width: 768px) {
+      font-size: 4vw;
+      font-weight: 500;
+    }
+  }
+
+  @media (max-width: 768px) {
+    font-size: 4vw;
+    font-weight: 500;
+    padding: 2vw 0.5vw;
   }
 `
 
@@ -47,6 +67,11 @@ export const Input = styled.input`
   &:focus {
     outline: 2px solid ${({ theme }) => theme.currentTheme['--primary-100']};
   }
+
+  @media (max-width: 768px) {
+    width: 85vw;
+    padding: 3vw 0.5vw;
+  }
 `
 
 export const TextArea = styled.textarea`
@@ -60,6 +85,11 @@ export const TextArea = styled.textarea`
 
   &:focus {
     outline: 2px solid ${({ theme }) => theme.currentTheme['--primary-100']};
+  }
+
+  @media (max-width: 768px) {
+    width: 85vw;
+    height: 20vh;
   }
 `
 
@@ -86,8 +116,12 @@ export const SubmitButton = styled.button`
   margin-right: 1vw;
 
   &:hover {
-    background-color: #ffd700;
-    color: black;
+    background-color: ${({ theme }) => theme.currentTheme['--accent-400']};
+    color: ${({ theme }) => theme.currentTheme['--text-400']};
+  }
+
+  @media (max-width: 768px) {
+    padding: 3vw;
   }
 `
 
@@ -103,6 +137,10 @@ export const ThundersBG = styled.div`
     border-radius: 8px;
     object-fit: cover;
   }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 
 export const CustomCheckbox = styled.label`
@@ -111,6 +149,12 @@ export const CustomCheckbox = styled.label`
   gap: 1vw;
   width: 30vw;
   height: auto;
+
+  @media (max-width: 768px) {
+    width: 85vw;
+    justify-content: center;
+    align-items: center;
+  }
 `
 
 export const HiddenCheckbox = styled.input.attrs({ type: 'checkbox' })`

@@ -15,6 +15,6 @@ export const WhatsappLogoWrapper = styled.div`
 
   @media (max-width: 768px) {
   width: 10vw;
-  bottom: 60px;
+  bottom: 10px;
   right: 10px;
 `

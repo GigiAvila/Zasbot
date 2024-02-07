@@ -10,6 +10,11 @@ import {
 } from './VirtualAssistant.Styles'
 import AssistantImg from './Assests/Assistant.png'
 import { useTheme } from '../../hooks/UseTheme'
+import {
+  WHATSAPP_BUTTON_TEXT,
+  WHATSAPP_TEXT,
+  WHATSAPP_TITLE
+} from '../../data/SpanishText'
 
 const VirtualAssistant = ({ toggleAssistant }) => {
   const { currentTheme } = useTheme()
@@ -34,13 +39,13 @@ const VirtualAssistant = ({ toggleAssistant }) => {
         <AssistantImageContainer>
           <img src={AssistantImg} alt='AsistantAvatar' />
         </AssistantImageContainer>
-        <h5>Virtual Assistant</h5>
+        <h5>{WHATSAPP_TITLE}</h5>
       </AssistantTitleArticle>
       <VirtualAssistantContent>
         <VirtualAssistantText
           rows='6'
           cols='40'
-          placeholder='Write whatever you need'
+          placeholder={WHATSAPP_TEXT}
           value={message}
           onChange={handleInputChange}
           theme={{ currentTheme }}
@@ -49,7 +54,7 @@ const VirtualAssistant = ({ toggleAssistant }) => {
           onClick={handleSendClick}
           theme={{ currentTheme }}
         >
-          Send
+          {WHATSAPP_BUTTON_TEXT}
         </VirtualAssistantButton>
       </VirtualAssistantContent>
     </AssistantContainer>

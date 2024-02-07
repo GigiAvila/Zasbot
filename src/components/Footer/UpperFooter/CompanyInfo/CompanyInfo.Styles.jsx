@@ -26,7 +26,7 @@ export const CompanyDataContainer = styled.div`
   }
 `
 
-export const CompanyTextFooter = styled.h5`
+export const CompanyTextFooter = styled.h2`
   font-weight: 300;
   font-size: 1vw;
   color: ${({ theme }) => theme.currentTheme['--text-100']};
@@ -42,7 +42,7 @@ export const CompanyContactInformationContainer = styled.div`
   width: 100%;
   margin-top: 1vw;
 
-  > h3 {
+  > h1 {
     font-weight: 700;
     font-size: 1vw;
     letter-spacing: 0.07rem;

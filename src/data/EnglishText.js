@@ -11,6 +11,9 @@ export const NAVBAR_CLIENTS = 'Clients'
 export const NAVBAR_CONTACT = 'Contact'
 export const NAVBAR_PRICES = 'Prices'
 
+export const LANGUAGE_TEXT = 'Select language'
+export const LANGUAGE_OPTIONS = ['Spanish', 'English']
+
 export const FOOTER_COMPANY_EMAIL = 'info@zasbot.com'
 export const FOOTER_COMPANY_PHONE = '+34 636595002'
 
@@ -23,3 +26,18 @@ export const FOOTER_TERMS_TEXT = 'Terms & Conditions'
 export const FOOTER_PRIVACY_TEXT = 'Privacy Policy'
 export const FOOTER_SECURITY_TEXT = 'Security'
 export const FOOTER_RIGHTS_TEXT = 'All Rights Reserved'
+
+export const CONTACT_TITLE = 'Contact'
+export const CONTACT_NAME_LABEL = 'Name'
+export const CONTACT_COMPANY_LABEL = 'Company'
+export const CONTACT_EMAIL_LABEL = 'Email'
+export const CONTACT_PHONE_LABEL = 'Phone'
+export const CONTACT_TEXT_LABEL = 'Write your request'
+export const CONTACT_POLICY_LABEL = ' have read and accepted the'
+export const CONTACT_POLICY_SPAN = 'privacy policy'
+export const CONTACT_OPTIONAL_SPAN = 'Optional'
+export const CONTACT_BUTTON_TEXT = 'Send'
+
+export const WHATSAPP_TITLE = 'Virtual Assistant'
+export const WHATSAPP_TEXT = 'Write whatever you need'
+export const WHATSAPP_BUTTON_TEXT = 'Send'

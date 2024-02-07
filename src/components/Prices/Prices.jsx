@@ -1,11 +1,14 @@
 import WhatsappButton from '../WhatsappButton/WhatsappButton'
+import { useTheme } from '../../hooks/UseTheme'
+import { PriceSection } from './Prices.Styles'
 
 const Prices = () => {
+  const { currentTheme } = useTheme()
   return (
-    <section>
+    <PriceSection theme={{ currentTheme }}>
       Prices
       <WhatsappButton />
-    </section>
+    </PriceSection>
   )
 }
 

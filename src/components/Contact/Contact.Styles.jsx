@@ -19,6 +19,10 @@ export const FormSection = styled.section`
   align-items: center;
   padding: 4vw 0;
   background-color: ${({ theme }) => theme.currentTheme['--bg-100']};
+
+  @media (max-width: 768px) {
+    padding-top: 15vw;
+  }
 `
 
 export const ContactWrapper = styled.div`
@@ -32,5 +36,10 @@ export const ContactWrapper = styled.div`
     letter-spacing: 0.1vw;
     padding: 1vw 0;
     animation: ${appearFromTop} 1s ease-in-out;
+
+    @media (max-width: 768px) {
+      font-size: 10vw;
+      padding: 3vw 0;
+    }
   }
 `

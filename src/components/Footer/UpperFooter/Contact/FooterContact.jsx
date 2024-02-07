@@ -17,8 +17,8 @@ const FooterContact = () => {
   return (
     <ContactFooterContainer theme={{ currentTheme }}>
       <ContactFooterTextWrapper theme={{ currentTheme }}>
-        <h3>{FOOTER_CONTACT_TITLE}</h3>
-        <h5>{FOOTER_CONTACT_TEXT}</h5>
+        <h1>{FOOTER_CONTACT_TITLE}</h1>
+        <p>{FOOTER_CONTACT_TEXT}</p>
         <ContactButton theme={{ currentTheme }}>
           <Link to='/contact'>{FOOTER_CONTACT_BUTTON_TEXT}</Link>
         </ContactButton>

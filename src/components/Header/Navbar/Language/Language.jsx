@@ -2,20 +2,21 @@ import { useState } from 'react'
 import { CustomSelect, SelectTitle } from './Language.Styles'
 import { useTheme } from '../../../../hooks/UseTheme'
 import ArrowImg from './Assets/Arrow.png'
+import { LANGUAGE_TEXT, LANGUAGE_OPTIONS } from '../../../../data/SpanishText'
 
 const Language = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [selectedOption, setSelectedOption] = useState(null)
   const { currentTheme } = useTheme()
 
-  const options = ['Spanish', 'English']
+  const options = LANGUAGE_OPTIONS
 
   const handleOptionClick = (option) => {
     setSelectedOption(option)
     setIsOpen(false)
   }
 
-  const titleText = selectedOption || 'Seleccionar idioma'
+  const titleText = selectedOption || LANGUAGE_TEXT
 
   return (
     <CustomSelect isOpen={isOpen} theme={{ currentTheme }}>

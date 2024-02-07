@@ -25,7 +25,7 @@ const Home = () => {
     <HomeSection id='home' theme={{ currentTheme }}>
       <HomeTextArticle theme={{ currentTheme }}>
         <h1>{HOME_TEXT}</h1>
-        <h3>{HOME_SLOGAN}</h3>
+        <h2>{HOME_SLOGAN}</h2>
         <HomeForm action='POST' theme={{ currentTheme }}>
           <HomeInput
             type='email'

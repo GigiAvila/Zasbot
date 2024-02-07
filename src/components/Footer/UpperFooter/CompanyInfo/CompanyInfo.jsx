@@ -22,8 +22,8 @@ const CompanyInfo = () => {
           {HOME_SLOGAN}
         </CompanyTextFooter>
         <CompanyContactInformationContainer theme={{ currentTheme }}>
-          <h3>{FOOTER_COMPANY_EMAIL}</h3>
-          <h3>{FOOTER_COMPANY_PHONE}</h3>
+          <h1>{FOOTER_COMPANY_EMAIL}</h1>
+          <h1>{FOOTER_COMPANY_PHONE}</h1>
         </CompanyContactInformationContainer>
       </CompanyDataContainer>
     </CompanyContainer>

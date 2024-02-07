@@ -9,6 +9,7 @@ export const ContactFooterContainer = styled.article`
   border-radius: 10px;
   background-color: ${({ theme }) => theme.currentTheme['--bg-300']};
   padding: 0.5vw;
+  margin-right: 1vw;
 
   @media (max-width: 768px) {
     display: none;
@@ -18,7 +19,7 @@ export const ContactFooterContainer = styled.article`
 export const ContactFooterTextWrapper = styled.div`
   padding: 1vw;
 
-  > h3 {
+  > h1 {
     line-height: 2.5;
     font-weight: bold;
     font-size: 1vw;
@@ -28,7 +29,7 @@ export const ContactFooterTextWrapper = styled.div`
       font-size: 2vw;
     }
   }
-  > h5 {
+  > p {
     font-weight: 200;
     padding: 1vw 0;
     line-height: 2;

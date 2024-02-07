@@ -6,7 +6,7 @@ export const ConditionsContainer = styled.section`
   align-items: flex-start;
   justify-content: space-evenly;
   width: 100%;
-  padding: 1vw 0.5vw;
+  padding: 1vw 1vw;
 `
 
 export const TermsConditionsAndPolicyText = styled.a`
