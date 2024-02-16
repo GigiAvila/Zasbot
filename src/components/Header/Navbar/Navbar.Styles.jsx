@@ -92,8 +92,46 @@ margin: 2vw;
 > img {
   width: 100%;
   height: auto;
+  filter: invert(100%);
 }
 
 @media (min-width:1023px) {
   display: none;
+`
+
+export const LoginButton = styled.button`
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: ${({ theme }) => theme.currentTheme['--text-400']};
+  background-color: ${({ theme }) => theme.currentTheme['--accent-400']};
+  width: 5vw;
+  height: 100%;
+
+  @media (max-width: 768px) {
+    padding: 1vw 0;
+    width: 90vw;
+    height: 5vh;
+    margin-top: 5vw;
+  }
+
+  > * {
+    text-decoration: none;
+    font-size: 0.9vw;
+    color: black;
+  }
+
+  > *:hover {
+    font-size: 1vw;
+    text-decoration: none;
+    color: black;
+  }
+
+  > * {
+    @media (max-width: 768px) {
+      font-size: 4vw;
+      width: 90vw;
+      padding: 0.5vw;
+    }
+  }
 `

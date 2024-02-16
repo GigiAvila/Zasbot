@@ -1,16 +1,17 @@
 export const META_DESCRIPTION = 'Lorem ipsum'
 
-export const HOME_TEXT = 'Tu asistente virtual a medida'
+export const HOME_TEXT = 'La plataforma conversacional #1'
 export const HOME_SLOGAN =
-  'Zasbot es un chatbot a medida que te permitirá conectar con tus clientes y aumentar tu ventas en simples pasos'
+  'Aumenta tus ingresos ofreciendo a tus clientes una atención 24/7 en todos los canales de comunicación'
 
 export const HOME_INPUT_TEXT = 'Ingresa tu correo'
-export const HOME_BUTTON_TEXT = 'Enviame información'
+export const HOME_BUTTON_TEXT = '¡Inicia tu prueba gratuita de 14 días!'
 
 export const NAVBAR_PRODUCT = 'Producto'
 export const NAVBAR_CLIENTS = 'Clientes'
 export const NAVBAR_CONTACT = 'Contacto'
 export const NAVBAR_PRICES = 'Precios'
+export const NAVBAR_INTEGRATIONS = 'Integraciones'
 
 export const LANGUAGE_TEXT = 'Selecciona idioma'
 export const LANGUAGE_OPTIONS = ['Español', 'Inglés']
@@ -42,3 +43,6 @@ export const CONTACT_BUTTON_TEXT = 'Enviar'
 export const WHATSAPP_TITLE = 'Asistente Virtual'
 export const WHATSAPP_TEXT = 'Escribe lo que necesites'
 export const WHATSAPP_BUTTON_TEXT = 'Enviar'
+
+export const INTEGRATION_TEXT =
+  'Nos integramos a las mejores aplicaciones del mercado para que puedas potenciar tu negocio'

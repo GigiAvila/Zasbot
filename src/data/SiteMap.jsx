@@ -1,7 +1,7 @@
 export const EN_SITEMAP = [
   {
     title: 'Product',
-    subroutes: ['Resume', 'Integrations', 'Cases', 'Pricing']
+    subroutes: ['Flowchart', 'Integrations', 'Cases', 'Pricing']
   },
   {
     title: 'Company',
@@ -16,14 +16,14 @@ export const EN_SITEMAP = [
 export const ES_SITEMAP = [
   {
     title: 'PRODUCTO',
-    subroutes: ['Resumen', 'Integraciones', 'Casos', 'Precios']
+    subroutes: ['Integraciones', 'Flujograma', 'Live-chat']
   },
   {
     title: 'EMPRESA',
-    subroutes: ['Acerca de nosotros', 'Testimonios']
+    subroutes: ['Prueba gratuita', 'Login']
   },
   {
     title: 'SOPORTE',
-    subroutes: ['Freguntas frecuentes', 'Contáctanos']
+    subroutes: ['Contáctanos']
   }
 ]

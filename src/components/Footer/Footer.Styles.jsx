@@ -6,6 +6,7 @@ export const FooterSection = styled.footer`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  box-shadow: 0px -5px 5px -1px rgba(50, 50, 93, 0.25);
+  box-shadow: 0px -5px 5px -1px
+    ${({ theme }) => `${theme.currentTheme['--primary-300']}80`};
   background-color: ${({ theme }) => theme.currentTheme['--bg-100']};
 `

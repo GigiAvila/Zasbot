@@ -4,16 +4,16 @@ import { darkPalette, lightPalette } from '../data/ColorPalette'
 export const ThemeContext = createContext()
 
 export const ThemeProvider = ({ children }) => {
-  const [isDarkMode, setIsDarkMode] = useState(false)
+  const [isLightMode, setisLightMode] = useState(false)
 
   const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode)
+    setisLightMode(!isLightMode)
   }
 
-  const currentTheme = isDarkMode ? darkPalette : lightPalette
+  const currentTheme = isLightMode ? lightPalette : darkPalette
 
   return (
-    <ThemeContext.Provider value={{ isDarkMode, toggleTheme, currentTheme }}>
+    <ThemeContext.Provider value={{ isLightMode, toggleTheme, currentTheme }}>
       {children}
     </ThemeContext.Provider>
   )

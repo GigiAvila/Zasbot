@@ -10,6 +10,7 @@ export const NAVBAR_PRODUCT = 'Product'
 export const NAVBAR_CLIENTS = 'Clients'
 export const NAVBAR_CONTACT = 'Contact'
 export const NAVBAR_PRICES = 'Prices'
+export const NAVBAR_INTEGRATIONS = 'Integrations'
 
 export const LANGUAGE_TEXT = 'Select language'
 export const LANGUAGE_OPTIONS = ['Spanish', 'English']

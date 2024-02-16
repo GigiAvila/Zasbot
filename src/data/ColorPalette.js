@@ -12,7 +12,9 @@ export const darkPalette = {
   '--text-400': '#2d2d2d', // negro
   '--bg-100': '#1E1E1E', // negro
   '--bg-200': '#2d2d2d', // gris oscuro
-  '--bg-300': '#454545' // gris intermedio
+  '--bg-300': '#454545', // gris intermedio
+  '--bg-400': '#FFD700', // amarillo
+  '--bg-500': '#2d2d2d'
 }
 
 export const lightPalette = {
@@ -29,5 +31,7 @@ export const lightPalette = {
   '--text-400': '#2d2d2d', // negro
   '--bg-100': '#FFFFFF', // blanco
   '--bg-200': '#2d2d2d',
-  '--bg-300': '#f2f2f2'
+  '--bg-300': '#f2f2f2',
+  '--bg-400': '#f2f2f2',
+  '--bg-500': '#ddb900' // gris claro
 }

@@ -8,7 +8,7 @@ import {
 import { useTheme } from '../../../../hooks/UseTheme'
 
 const ColorModeToggle = () => {
-  const { toggleTheme, isDarkMode } = useTheme()
+  const { toggleTheme, isLightMode } = useTheme()
 
   return (
     <ColorModeContainer>
@@ -17,7 +17,7 @@ const ColorModeToggle = () => {
           <Input
             id='switch'
             type='checkbox'
-            checked={isDarkMode}
+            checked={isLightMode}
             onChange={toggleTheme}
           />
           <MoonIcon className='icon icon--moon'>

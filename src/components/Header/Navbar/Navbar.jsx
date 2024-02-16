@@ -1,14 +1,20 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import ColorModeToggle from './ColorMode/ColorModeToggle'
-import Language from './Language/Language'
+// import ColorModeToggle from './ColorMode/ColorModeToggle'
+// import Language from './Language/Language'
 import {
   NAVBAR_PRODUCT,
-  NAVBAR_CLIENTS,
-  NAVBAR_CONTACT,
-  NAVBAR_PRICES
+  NAVBAR_INTEGRATIONS,
+  NAVBAR_CONTACT
+  // NAVBAR_PRICES
 } from '../../../data/SpanishText.js'
-import { Nav, NavList, NavElement, MenuIconContainer } from './Navbar.Styles'
+import {
+  Nav,
+  NavList,
+  NavElement,
+  MenuIconContainer,
+  LoginButton
+} from './Navbar.Styles'
 import MenuIcon from './Assets/menu.svg'
 import CloseMenuIcon from './Assets/close.svg'
 import { useTheme } from '../../../hooks/UseTheme'
@@ -50,25 +56,36 @@ const Navbar = () => {
           {!isHome ? (
             <Link to='/home'>{NAVBAR_PRODUCT}</Link>
           ) : (
-            <a href='#resume'>{NAVBAR_PRODUCT}</a>
+            <a href='#flowChart'>{NAVBAR_PRODUCT}</a>
           )}
         </NavElement>
         <NavElement onClick={toggleMenu} theme={{ currentTheme }}>
           {!isHome ? (
-            <Link to='/home'>{NAVBAR_CLIENTS}</Link>
+            <Link to='/home'>{NAVBAR_INTEGRATIONS}</Link>
           ) : (
-            <a href='#testimonies'>{NAVBAR_CLIENTS}</a>
+            <a href='#testimonies'>{NAVBAR_INTEGRATIONS}</a>
           )}
         </NavElement>
         <NavElement onClick={toggleMenu} theme={{ currentTheme }}>
           <Link to='/contact'>{NAVBAR_CONTACT}</Link>
         </NavElement>
-        <NavElement onClick={toggleMenu} theme={{ currentTheme }}>
+        {/* <NavElement onClick={toggleMenu} theme={{ currentTheme }}>
           <Link to='/prices'>{NAVBAR_PRICES}</Link>
-        </NavElement>
+        </NavElement> */}
+        <li>
+          <LoginButton onClick={toggleMenu} theme={{ currentTheme }}>
+            <a
+              href='https://app.zasbot.com/login'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              LOGIN
+            </a>
+          </LoginButton>
+        </li>
       </NavList>
-      <Language />
-      <ColorModeToggle />
+      {/* <Language /> */}
+      {/* <ColorModeToggle /> */}
     </Nav>
   )
 }

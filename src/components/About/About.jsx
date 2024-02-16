@@ -1,19 +1,19 @@
-import Resume from './01-Resume/Resume'
-import Cases from './02-Cases/Cases'
+import FlowChart from './02-FlowChart/FlowChart'
+import Conversations from './03-Conversations/Conversations'
 import Integrations from './03-Integrations/Integrations'
-import Testimonies from './04-Testimonies/Testimonies'
 import { useTheme } from '../../hooks/UseTheme'
 import { AboutSection } from './About.Styles'
+import Assessment from './04-Assessment/Assessment'
 
 const About = () => {
   const { currentTheme } = useTheme()
 
   return (
     <AboutSection id='about' theme={{ currentTheme }}>
-      <Resume />
-      <Cases />
       <Integrations />
-      <Testimonies />
+      <FlowChart />
+      <Conversations />
+      <Assessment />
     </AboutSection>
   )
 }
