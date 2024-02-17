@@ -1,4 +1,24 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`
+
+const appearFromBelow = keyframes`
+  from {
+    transform: translateY(300%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+`
 
 export const AssessmentSection = styled.section`
   height: 90vh;
@@ -18,6 +38,7 @@ export const AssesmentArticle = styled.article`
   gap: 3vw;
   border-radius: 8px;
   border: 3px solid ${({ theme }) => theme.currentTheme['--accent-400']};
+  animation: ${fadeIn} 3s ease-in-out;
 
   @media (max-width: 768px) {
     width: 90vw;
@@ -35,6 +56,7 @@ export const AssesmentArticle = styled.article`
     font-size: 2.5vw;
     font-weight: bold;
     text-align: center;
+    animation: ${appearFromBelow} 1s ease-in-out;
 
     @media (max-width: 768px) {
       font-size: 10vw;
@@ -46,6 +68,7 @@ export const AssesmentArticle = styled.article`
     font-weight: 300;
     color: ${({ theme }) => theme.currentTheme['--text-100']};
     text-align: center;
+    animation: ${appearFromBelow} 1.2s ease-in-out;
 
     @media (max-width: 768px) {
       font-size: 6vw;
@@ -62,6 +85,7 @@ export const ContactButton = styled.button`
   height: 6vh;
   align-self: center;
   border-radius: 8px;
+  animation: ${fadeIn} 2.6s ease-in-out;
 
   @media (max-width: 768px) {
     padding: 2vw;

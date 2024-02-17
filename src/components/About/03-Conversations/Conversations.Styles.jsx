@@ -1,4 +1,24 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`
+
+const appearFromRight = keyframes`
+  from {
+    transform: translateX(300%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+`
 
 export const ConversationsSection = styled.section`
   width: 100%;
@@ -35,6 +55,7 @@ export const ConversationsTitles = styled.article`
     color: transparent;
     font-size: 3vw;
     font-weight: bold;
+    animation: ${appearFromRight} 1.3s ease-in-out;
 
     @media (max-width: 768px) {
       font-size: 10vw;
@@ -46,6 +67,7 @@ export const ConversationsTitles = styled.article`
     font-size: 1.7vw;
     font-weight: 300;
     color: ${({ theme }) => theme.currentTheme['--text-100']};
+    animation: ${appearFromRight} 1.6s ease-in-out;
 
     @media (max-width: 768px) {
       font-size: 6vw;
@@ -62,6 +84,7 @@ export const ConversationImageWrapper = styled.div`
   width: 50%;
   height: auto;
   display: flex;
+  animation: ${fadeIn} 3s ease-in-out;
 
   > img {
     width: 100%;

@@ -1,4 +1,24 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`
+
+const appearFromLeft = keyframes`
+  from {
+    transform: translateX(-300%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+`
 
 export const FlowChartSection = styled.section`
   width: 100%;
@@ -61,6 +81,7 @@ export const QuoteLogoWrapper = styled.div`
   display: flex;
   background-color: ${({ theme }) => theme.currentTheme['--accent-400']};
   align-self: flex-start;
+  animation: ${appearFromLeft} 1.3s ease-in-out;
 
   img {
     width: 100%;
@@ -93,6 +114,7 @@ export const FlowChartTitles = styled.article`
     color: transparent;
     font-size: 3vw;
     font-weight: bold;
+    animation: ${appearFromLeft} 1.3s ease-in-out;
 
     @media (max-width: 768px) {
       font-size: 10vw;
@@ -104,6 +126,7 @@ export const FlowChartTitles = styled.article`
     font-size: 1.7vw;
     font-weight: 300;
     color: ${({ theme }) => theme.currentTheme['--text-100']};
+    animation: ${appearFromLeft} 1.6s ease-in-out;
 
     @media (max-width: 768px) {
       font-size: 6vw;
@@ -116,6 +139,7 @@ export const FlowVideo = styled.div`
   height: 100%;
   display: flex;
   padding: 0 2vw;
+  animation: ${fadeIn} 3s ease-in-out;
 
   > video {
     width: 100%;
