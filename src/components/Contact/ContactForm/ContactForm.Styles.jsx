@@ -36,19 +36,29 @@ export const Label = styled.label`
   margin-bottom: 0.5vw;
   color: ${({ theme }) => theme.currentTheme['--text-100']};
 
+  @media (max-width: 768px) {
+    font-size: 4vw;
+    font-weight: 500;
+    padding: 2vw 0.5vw;
+  }
+`
+
+export const PrivatePolicyAnchor = styled.a`
+  text-decoration: none;
+  color: ${({ theme }) => theme.currentTheme['--accent-300']};
+
   > span {
     color: ${({ theme }) => theme.currentTheme['--accent-300']};
 
-    @media (max-width: 768px) {
-      font-size: 4vw;
-      font-weight: 500;
+    &:hover {
+      text-decoration: none;
+      color: ${({ theme }) => theme.currentTheme['--accent-300']};
     }
   }
 
   @media (max-width: 768px) {
     font-size: 4vw;
     font-weight: 500;
-    padding: 2vw 0.5vw;
   }
 `
 

@@ -16,7 +16,7 @@ export const FEATURES = {
     'Incluye todas las integraciones',
     '5 bots',
     '5 usuarios',
-    '5 bot users',
+    '11.000 bot users',
     'Bot Omnicanal'
   ],
   enterprise: [

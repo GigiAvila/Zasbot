@@ -10,7 +10,8 @@ import {
   ThundersBG,
   CustomCheckbox,
   HiddenCheckbox,
-  StyledCheckbox
+  StyledCheckbox,
+  PrivatePolicyAnchor
 } from './ContactForm.Styles'
 import { useTheme } from '../../../hooks/UseTheme'
 // import ConctactBg from '../ContactBG/ConctactBg'
@@ -102,7 +103,14 @@ const ContactForm = () => {
           />
           <StyledCheckbox theme={{ currentTheme }} />
           <Label htmlFor='PrivatePolicy' theme={{ currentTheme }}>
-            {CONTACT_POLICY_LABEL} <span> {CONTACT_POLICY_SPAN}</span>
+            {CONTACT_POLICY_LABEL}{' '}
+            <PrivatePolicyAnchor
+              href='https://www.iubenda.com/privacy-policy/12964736'
+              title='Política de privacidad'
+              theme={{ currentTheme }}
+            >
+              <span>{CONTACT_POLICY_SPAN}</span>
+            </PrivatePolicyAnchor>
           </Label>
         </CustomCheckbox>
 

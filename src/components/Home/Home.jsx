@@ -36,7 +36,7 @@ const Home = () => {
             </HomeSpan>{' '}
           </h1>
           <h2>{HOME_SLOGAN}</h2>
-          <HomeForm action='POST' theme={{ currentTheme }}>
+          <HomeForm theme={{ currentTheme }}>
             {/* <HomeInput
             type='email'
             placeholder={HOME_INPUT_TEXT}

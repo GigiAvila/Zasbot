@@ -110,7 +110,7 @@ export const HomeImgArticle = styled.article`
   }
 `
 
-export const HomeForm = styled.form`
+export const HomeForm = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.5vw;
