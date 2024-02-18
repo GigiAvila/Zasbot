@@ -56,6 +56,7 @@ export const SitePage = styled.li`
   font-size: 0.8vw;
   display: block;
   color: ${({ theme }) => theme.currentTheme['--text-100']};
+  cursor: pointer;
 
   @media (max-width: 768px) {
     font-size: 4vw;

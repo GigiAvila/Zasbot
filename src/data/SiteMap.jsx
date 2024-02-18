@@ -16,7 +16,7 @@ export const EN_SITEMAP = [
 export const ES_SITEMAP = [
   {
     title: 'PRODUCTO',
-    subroutes: ['Integraciones', 'Flujograma', 'Live-chat']
+    subroutes: ['Integraciones', 'Flujograma', 'Live-chat', 'Precios']
   },
   {
     title: 'EMPRESA',

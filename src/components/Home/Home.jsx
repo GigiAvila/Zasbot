@@ -7,8 +7,8 @@ import {
   HomeAnchor,
   HomeButton,
   HomeButtonImgWrapper,
-  HeroWrapper
-  // HomeForm
+  HeroWrapper,
+  HomeForm
 } from './Home.Styles'
 import {
   HOME_SLOGAN,
@@ -36,26 +36,27 @@ const Home = () => {
             </HomeSpan>{' '}
           </h1>
           <h2>{HOME_SLOGAN}</h2>
-          {/* <HomeForm action='POST' theme={{ currentTheme }}> */}
-          {/* <HomeInput
+          <HomeForm action='POST' theme={{ currentTheme }}>
+            {/* <HomeInput
             type='email'
             placeholder={HOME_INPUT_TEXT}
             theme={{ currentTheme }}
           /> */}
-          <HomeButton theme={{ currentTheme }}>
-            <HomeAnchor
-              href='https://app.zasbot.com/register'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              {' '}
-              <p>{HOME_BUTTON_TEXT}</p>
-            </HomeAnchor>
-            <HomeButtonImgWrapper>
-              <img src={ArrowImg} alt='Send Icon' />
-            </HomeButtonImgWrapper>
-          </HomeButton>
-          {/* </HomeForm> */}
+            <HomeButton theme={{ currentTheme }}>
+              <HomeAnchor
+                href='https://app.zasbot.com/register'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                {' '}
+                <p>{HOME_BUTTON_TEXT}</p>
+              </HomeAnchor>
+              <HomeButtonImgWrapper>
+                <img src={ArrowImg} alt='Send Icon' />
+              </HomeButtonImgWrapper>
+            </HomeButton>
+            <p>* No requiere tarjeta de crédito</p>
+          </HomeForm>
         </HomeTextArticle>
         <HomeImgArticle theme={{ currentTheme }}>
           <video src={HomeVideo} autoPlay muted loop></video>

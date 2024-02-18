@@ -9,6 +9,12 @@ export const ConditionsContainer = styled.section`
   padding: 1vw 1vw;
 `
 
+export const TermsWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 0.5vw;
+`
+
 export const TermsConditionsAndPolicyText = styled.a`
   display: flex;
   flex-direction: row;

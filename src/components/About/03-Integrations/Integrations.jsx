@@ -19,6 +19,8 @@ import SheetsImg from './Assets/sheets.svg'
 import StripeImg from './Assets/stripe.svg'
 import TwillioImg from './Assets/twillio.svg'
 import ZapierImg from './Assets/zapier.svg'
+import WhatsappImg from './Assets/whatsapp.svg'
+import SlackImg from './Assets/slack.svg'
 
 const Integrations = () => {
   const { currentTheme } = useTheme()
@@ -33,7 +35,9 @@ const Integrations = () => {
     SheetsImg,
     StripeImg,
     TwillioImg,
-    ZapierImg
+    ZapierImg,
+    WhatsappImg,
+    SlackImg
   ]
 
   return (

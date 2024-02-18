@@ -95,9 +95,13 @@ export const LogosArticle = styled.article`
 `
 export const LogoBg = styled.div`
   position: relative;
-  padding: 1.5vw;
+  padding: 1.2vw;
   border-radius: 8px;
   backdrop-filter: blur(10px);
+
+  @media (max-width: 768px) {
+    padding: 3vw;
+  }
 
   &::before {
     content: '';

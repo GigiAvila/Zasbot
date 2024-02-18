@@ -14,7 +14,7 @@ export const NavList = styled.ul`
   align-items: center;
   list-style: none;
   gap: 1vw;
-  width: 30vw;
+  width: auto;
 
   @media (max-width: 768px) {
     display: ${(props) => (props.menuOpen ? 'flex' : 'none')};

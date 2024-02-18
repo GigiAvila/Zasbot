@@ -5,8 +5,8 @@ import { Link, useLocation } from 'react-router-dom'
 import {
   NAVBAR_PRODUCT,
   NAVBAR_INTEGRATIONS,
-  NAVBAR_CONTACT
-  // NAVBAR_PRICES
+  NAVBAR_CONTACT,
+  NAVBAR_PRICES
 } from '../../../data/SpanishText.js'
 import {
   Nav,
@@ -69,9 +69,9 @@ const Navbar = () => {
         <NavElement onClick={toggleMenu} theme={{ currentTheme }}>
           <Link to='/contact'>{NAVBAR_CONTACT}</Link>
         </NavElement>
-        {/* <NavElement onClick={toggleMenu} theme={{ currentTheme }}>
+        <NavElement onClick={toggleMenu} theme={{ currentTheme }}>
           <Link to='/prices'>{NAVBAR_PRICES}</Link>
-        </NavElement> */}
+        </NavElement>
         <li>
           <LoginButton onClick={toggleMenu} theme={{ currentTheme }}>
             <a

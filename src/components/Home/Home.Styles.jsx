@@ -112,11 +112,26 @@ export const HomeImgArticle = styled.article`
 
 export const HomeForm = styled.form`
   display: flex;
-  border-radius: 5px;
-  border: 1px solid ${({ theme }) => theme.currentTheme['--accent-100']};
-  padding: 0.3vw;
+  flex-direction: column;
+  gap: 0.5vw;
   width: 30vw;
   animation: ${appearFromBelow} 1s ease-in-out;
+
+  > p {
+    color: ${({ theme }) => theme.currentTheme['--text-200']};
+    font-size: 0.8vw;
+
+    @media (max-width: 768px) {
+      text-align: center;
+      font-size: 4vw;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 80vw;
+    height: auto;
+    gap: 1vw;
+  }
 `
 
 export const HomeInput = styled.input`
@@ -161,6 +176,10 @@ export const HomeButton = styled.button`
 export const HomeAnchor = styled.a`
   text-decoration: none;
   color: black;
+
+  &:hover {
+    color: black;
+  }
 
   > p {
     font-size: 0.8vw;
