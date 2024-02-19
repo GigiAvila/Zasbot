@@ -214,7 +214,7 @@ export const PricingSale = styled(Link)`
 export const PaymentOption = styled.div`
   border-radius: 15px;
   border: 1px solid white;
-  height: 70vh;
+  height: 80vh;
   width: 20vw;
   display: flex;
   flex-direction: column;

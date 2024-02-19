@@ -87,13 +87,18 @@ export const Input = styled.input`
 
 export const TextArea = styled.textarea`
   width: 30vw;
-  height: 12vh;
+  min-height: 10vh;
+  max-height: 30vh;
   margin-bottom: 0.5vw;
   padding: 0.5vw;
   border: none;
   border-radius: 4px;
   background-color: ${({ theme }) => theme.currentTheme['--bg-100']};
   color: ${({ theme }) => theme.currentTheme['--text-200']};
+  resize: none;
+  form-sizing: content;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
 
   &:focus {
     outline: 2px solid ${({ theme }) => theme.currentTheme['--primary-100']};

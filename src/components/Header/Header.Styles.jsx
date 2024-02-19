@@ -12,4 +12,9 @@ export const Headers = styled.header`
   top: 0;
   width: 100%;
   z-index: 1;
+  height: 10vh;
+
+  @media (min-width: 768px) {
+    height: auto;
+  }
 `

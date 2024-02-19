@@ -1,10 +1,13 @@
 import { Outlet } from 'react-router-dom'
+import { useTheme } from '../../hooks/UseTheme'
+import { MainSection } from './Main.Styles'
 
 const Main = () => {
+  const { currentTheme } = useTheme()
   return (
-    <main>
+    <MainSection theme={{ currentTheme }}>
       <Outlet />
-    </main>
+    </MainSection>
   )
 }
 
