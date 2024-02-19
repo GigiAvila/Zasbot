@@ -69,6 +69,7 @@ export const Input = styled.input`
   border-radius: 4px;
   width: 30vw;
   background-color: ${({ theme }) => theme.currentTheme['--bg-100']};
+  color: ${({ theme }) => theme.currentTheme['--text-200']};
 
   &::placeholder {
     color: ${({ theme }) => theme.currentTheme['--text-200']};
@@ -92,6 +93,7 @@ export const TextArea = styled.textarea`
   border: none;
   border-radius: 4px;
   background-color: ${({ theme }) => theme.currentTheme['--bg-100']};
+  color: ${({ theme }) => theme.currentTheme['--text-200']};
 
   &:focus {
     outline: 2px solid ${({ theme }) => theme.currentTheme['--primary-100']};

@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import {
   FormWrapper,
   Form,
@@ -14,8 +15,8 @@ import {
   PrivatePolicyAnchor
 } from './ContactForm.Styles'
 import { useTheme } from '../../../hooks/UseTheme'
-// import ConctactBg from '../ContactBG/ConctactBg'
 import ThunderImage from '../Assets/thunders.png'
+import { FetchContactData } from '../../../fetch/FormData'
 import {
   CONTACT_BUTTON_TEXT,
   CONTACT_COMPANY_LABEL,
@@ -30,13 +31,28 @@ import {
 
 const ContactForm = () => {
   const { currentTheme } = useTheme()
+  const { postNewForm } = FetchContactData()
+
+  const [formData, setFormData] = useState({
+    name: '',
+    company: '',
+    email: '',
+    phone: '',
+    contactText: ''
+  })
+
+  const onSubmit = (event) => {
+    event.preventDefault()
+    console.log(formData)
+    postNewForm(formData)
+  }
 
   return (
     <FormWrapper theme={{ currentTheme }}>
       <ThundersBG>
         <img src={ThunderImage} alt='Thunder Background Image' />
       </ThundersBG>
-      <Form action='POST' theme={{ currentTheme }}>
+      <Form onSubmit={onSubmit} theme={{ currentTheme }}>
         <Label htmlFor='name' theme={{ currentTheme }}>
           {CONTACT_NAME_LABEL} <span>*</span>
         </Label>
@@ -46,6 +62,7 @@ const ContactForm = () => {
           placeholder={CONTACT_NAME_LABEL}
           required
           theme={{ currentTheme }}
+          onChange={(e) => setFormData({ ...formData, name: e.target.value })}
         />
 
         <Label htmlFor='company' theme={{ currentTheme }}>
@@ -57,6 +74,9 @@ const ContactForm = () => {
           placeholder={CONTACT_COMPANY_LABEL}
           required
           theme={{ currentTheme }}
+          onChange={(e) =>
+            setFormData({ ...formData, company: e.target.value })
+          }
         />
 
         <Label htmlFor='email' theme={{ currentTheme }}>
@@ -68,6 +88,7 @@ const ContactForm = () => {
           placeholder={CONTACT_EMAIL_LABEL}
           required
           theme={{ currentTheme }}
+          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
         />
 
         <PhoneDiv>
@@ -82,6 +103,9 @@ const ContactForm = () => {
             id='phone'
             placeholder={CONTACT_PHONE_LABEL}
             theme={{ currentTheme }}
+            onChange={(e) =>
+              setFormData({ ...formData, phone: e.target.value })
+            }
           />
         </PhoneDiv>
 
@@ -93,6 +117,9 @@ const ContactForm = () => {
           name='contactText'
           required
           theme={{ currentTheme }}
+          onChange={(e) =>
+            setFormData({ ...formData, contactText: e.target.value })
+          }
         ></TextArea>
         <CustomCheckbox>
           <HiddenCheckbox
