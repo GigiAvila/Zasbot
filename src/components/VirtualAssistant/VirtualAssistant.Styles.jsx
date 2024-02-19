@@ -43,6 +43,11 @@ export const AssistantTitleArticle = styled.article`
 
 export const VirtualAssistantContent = styled.article`
   display: flex;
+  gap: 0.5vw;
+
+  @media (max-width: 768px) {
+    gap: 1vw;
+  }
 `
 export const AssistantImageContainer = styled.div`
   width: 5vw;
@@ -85,6 +90,8 @@ export const VirtualAssistantButton = styled.button`
   height: 5vh;
   text-align: center;
   align-self: flex-end;
+  background-color: ${({ theme }) => theme.currentTheme['--primary-200']};
+  color: ${({ theme }) => theme.currentTheme['--bg-100']};
 
   &:hover {
     background-color: ${({ theme }) => theme.currentTheme['--accent-300']};

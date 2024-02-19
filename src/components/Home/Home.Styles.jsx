@@ -80,7 +80,7 @@ export const HomeTextArticle = styled.article`
   }
 
   @media (max-width: 768px) {
-    height: 100vh;
+    height: 90vh;
     width: 90vw;
     justify-content: center;
     align-items: center;

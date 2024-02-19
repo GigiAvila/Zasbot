@@ -17,11 +17,11 @@ export const FormSection = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4vw 0;
+  padding: 1vw 0;
   background-color: ${({ theme }) => theme.currentTheme['--bg-100']};
 
   @media (max-width: 768px) {
-    padding-top: 15vw;
+    padding-top: 10vw;
   }
 `
 

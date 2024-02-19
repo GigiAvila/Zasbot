@@ -1,40 +1,38 @@
-import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 const GetInTouchSection = styled.div`
-display:flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items: center;
-width: 25vw;
-padding: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 25vw;
+  padding: 1vw;
 
-
-@media (max-width:768px){
-  width: 100%;
-  height: auto;
-  text-align: center;
-  display: none;
-}
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: none;
+  }
 `
 
 const GetInTouchTitle = styled.h3`
-font-size: 2vw;
-width: 100%;
+  font-size: 2vw;
+  width: 100%;
 
-@media (max-width:768px){
-  font-size: 4vw;
-}
+  @media (max-width: 768px) {
+    font-size: 4vw;
+  }
 `
 
 const GetInTouchSubtitle = styled.h5`
-font-size: 0.9vw;
-width: 100%;
+  font-size: 0.9vw;
+  width: 100%;
 
-@media (max-width:768px){
-  font-size: 3vw;
-}
+  @media (max-width: 768px) {
+    font-size: 3vw;
+  }
 `
 
 const GetInTouchButton = styled.button`
@@ -59,17 +57,14 @@ cursor: pointer;
 }
 `
 
-
-
-
 const PricingGetInContact = () => {
-
   return (
     <GetInTouchSection>
       <GetInTouchTitle>Need something different?</GetInTouchTitle>
       <GetInTouchSubtitle>Get in touch</GetInTouchSubtitle>
-      <GetInTouchButton><Link to="/contactUs">Let us know</Link></GetInTouchButton>
-
+      <GetInTouchButton>
+        <Link to='/contactUs'>Let us know</Link>
+      </GetInTouchButton>
     </GetInTouchSection>
   )
 }

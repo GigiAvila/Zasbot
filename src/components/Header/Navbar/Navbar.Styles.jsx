@@ -100,13 +100,16 @@ margin: 2vw;
 `
 
 export const LoginButton = styled.button`
-  background-color: transparent;
   outline: none;
   border: none;
   color: ${({ theme }) => theme.currentTheme['--text-400']};
-  background-color: ${({ theme }) => theme.currentTheme['--accent-400']};
+  background-color: ${({ theme }) => theme.currentTheme['--primary-200']};
   width: 5vw;
   height: 100%;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.currentTheme['--primary-100']};
+  }
 
   @media (max-width: 768px) {
     padding: 1vw 0;
@@ -114,24 +117,21 @@ export const LoginButton = styled.button`
     height: 5vh;
     margin-top: 5vw;
   }
+`
 
-  > * {
+export const LoginAnchor = styled.a`
+  text-decoration: none;
+  font-size: 0.9vw;
+  color: black;
+
+  &:hover {
     text-decoration: none;
-    font-size: 0.9vw;
     color: black;
   }
 
-  > *:hover {
-    font-size: 1vw;
-    text-decoration: none;
-    color: black;
-  }
-
-  > * {
-    @media (max-width: 768px) {
-      font-size: 4vw;
-      width: 90vw;
-      padding: 0.5vw;
-    }
+  @media (max-width: 768px) {
+    font-size: 4vw;
+    width: 90vw;
+    padding: 0.5vw;
   }
 `

@@ -13,8 +13,9 @@ import {
   NavList,
   NavElement,
   MenuIconContainer,
-  LoginButton
-} from './Navbar.Styles'
+  LoginButton,
+  LoginAnchor
+} from './Navbar.Styles.jsx'
 import MenuIcon from './Assets/menu.svg'
 import CloseMenuIcon from './Assets/close.svg'
 import { useTheme } from '../../../hooks/UseTheme'
@@ -73,15 +74,16 @@ const Navbar = () => {
           <Link to='/prices'>{NAVBAR_PRICES}</Link>
         </NavElement>
         <li>
-          <LoginButton onClick={toggleMenu} theme={{ currentTheme }}>
-            <a
-              href='https://app.zasbot.com/login'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
+          <LoginAnchor
+            href='https://app.zasbot.com/login'
+            target='_blank'
+            rel='noopener noreferrer'
+            theme={{ currentTheme }}
+          >
+            <LoginButton onClick={toggleMenu} theme={{ currentTheme }}>
               LOGIN
-            </a>
-          </LoginButton>
+            </LoginButton>
+          </LoginAnchor>
         </li>
       </NavList>
       {/* <Language /> */}

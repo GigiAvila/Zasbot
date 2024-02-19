@@ -12,7 +12,9 @@ export const ConditionsContainer = styled.section`
 export const TermsWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  gap: 0.5vw;
+  justify-content: flex-start;
+  gap: 0.4vw;
+  width: 100%;
 `
 
 export const TermsConditionsAndPolicyText = styled.a`
@@ -31,7 +33,7 @@ export const TermsConditionsAndPolicyText = styled.a`
   }
 
   @media (max-width: 768px) {
-    font-size: 3vw;
+    font-size: 2.4vw;
     letter-spacing: 0.02rem;
     padding: 1vw 0;
   }
