@@ -32,7 +32,6 @@ export const FlowChartSection = styled.section`
   padding: 2vw;
 
   @media (max-width: 768px) {
-    height: auto;
     flex-direction: column;
   }
 `
@@ -81,7 +80,8 @@ export const QuoteLogoWrapper = styled.div`
   display: flex;
   background-color: ${({ theme }) => theme.currentTheme['--accent-400']};
   align-self: flex-start;
-  animation: ${appearFromLeft} 1.3s ease-in-out;
+  animation: ${(props) => (props.animate ? appearFromLeft : 'none')} 1.3s
+    ease-in-out;
 
   img {
     width: 100%;
@@ -114,7 +114,8 @@ export const FlowChartTitles = styled.article`
     color: transparent;
     font-size: 3vw;
     font-weight: bold;
-    animation: ${appearFromLeft} 1.3s ease-in-out;
+    animation: ${(props) => (props.animate ? appearFromLeft : 'none')} 1.3s
+      ease-in-out;
 
     @media (max-width: 768px) {
       font-size: 10vw;
@@ -126,7 +127,8 @@ export const FlowChartTitles = styled.article`
     font-size: 1.7vw;
     font-weight: 300;
     color: ${({ theme }) => theme.currentTheme['--text-100']};
-    animation: ${appearFromLeft} 1.6s ease-in-out;
+    animation: ${(props) => (props.animate ? appearFromLeft : 'none')} 1.6s
+      ease-in-out;
 
     @media (max-width: 768px) {
       font-size: 6vw;
@@ -139,7 +141,7 @@ export const FlowVideo = styled.div`
   height: 100%;
   display: flex;
   padding: 0 2vw;
-  animation: ${fadeIn} 3s ease-in-out;
+  animation: ${(props) => (props.animate ? fadeIn : 'none')} 3s ease-in-out;
 
   > video {
     width: 100%;

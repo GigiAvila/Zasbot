@@ -5,7 +5,7 @@ export const PaymentOptionsWrapper = styled.div`
   height: auto;
   display: flex;
   align-items: center;
-  padding: 4vw;
+  padding: 3vw;
 
   @media (max-width: 768px) {
     flex-direction: column;

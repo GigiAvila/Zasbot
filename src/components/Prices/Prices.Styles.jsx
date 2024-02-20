@@ -18,3 +18,11 @@ export const PricingCardSection = styled.section`
     gap: 10vw;
   }
 `
+
+export const TaxText = styled.p`
+  color: ${({ theme }) => theme.currentTheme['--text-100']};
+  padding: 0vw 4vw 2vw 0vw;
+  align-self: flex-end;
+  font-size: 1vw;
+  font-style: italic;
+`

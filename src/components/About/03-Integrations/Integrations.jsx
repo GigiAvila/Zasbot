@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import { INTEGRATION_TEXT } from '../../../data/SpanishText'
 import {
   IntegrationsSection,
@@ -24,7 +25,6 @@ import SlackImg from './Assets/slack.svg'
 
 const Integrations = () => {
   const { currentTheme } = useTheme()
-
   const integrationImages = [
     FacebookImg,
     GmailImg,
@@ -39,14 +39,46 @@ const Integrations = () => {
     WhatsappImg,
     SlackImg
   ]
+  const [scrollY, setScrollY] = useState(0)
+  const [animate, setAnimate] = useState(false)
+  const isDesktop = window.innerWidth > 768
+
+  const handleScroll = () => {
+    const newScrollY = window.scrollY
+    setScrollY(newScrollY)
+
+    const startScrollY = isDesktop ? 100 : 600
+
+    if (newScrollY > startScrollY) {
+      setAnimate(true)
+    } else {
+      setAnimate(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
 
   return (
     <IntegrationsSection id='integrations' theme={{ currentTheme }}>
-      <IntegracionsTitles theme={{ currentTheme }}>
+      <IntegracionsTitles
+        theme={{ currentTheme }}
+        scrollY={scrollY}
+        animate={animate}
+      >
+        {' '}
         <h1>Integraciones</h1>
         <h2>{INTEGRATION_TEXT}</h2>
       </IntegracionsTitles>
-      <LogosArticle theme={{ currentTheme }}>
+      <LogosArticle
+        theme={{ currentTheme }}
+        scrollY={scrollY}
+        animate={animate}
+      >
         {integrationImages.map((image, index) => (
           <LogoBg key={index} theme={{ currentTheme }}>
             <LogoWrapper theme={{ currentTheme }}>

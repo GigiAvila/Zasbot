@@ -22,7 +22,7 @@ const appearFromRight = keyframes`
 
 export const ConversationsSection = styled.section`
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -55,7 +55,8 @@ export const ConversationsTitles = styled.article`
     color: transparent;
     font-size: 3vw;
     font-weight: bold;
-    animation: ${appearFromRight} 1.3s ease-in-out;
+    animation: ${(props) => (props.animate ? appearFromRight : 'none')} 1.3s
+      ease-in-out;
 
     @media (max-width: 768px) {
       font-size: 10vw;
@@ -67,7 +68,8 @@ export const ConversationsTitles = styled.article`
     font-size: 1.7vw;
     font-weight: 300;
     color: ${({ theme }) => theme.currentTheme['--text-100']};
-    animation: ${appearFromRight} 1.6s ease-in-out;
+    animation: ${(props) => (props.animate ? appearFromRight : 'none')} 1.6s
+      ease-in-out;
 
     @media (max-width: 768px) {
       font-size: 6vw;
@@ -84,7 +86,7 @@ export const ConversationImageWrapper = styled.div`
   width: 50%;
   height: auto;
   display: flex;
-  animation: ${fadeIn} 3s ease-in-out;
+  animation: ${(props) => (props.animate ? fadeIn : 'none')} 3s ease-in-out;
 
   > img {
     width: 100%;

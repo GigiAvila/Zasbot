@@ -1,5 +1,4 @@
 import styled, { keyframes } from 'styled-components'
-
 const fadeIn = keyframes`
   from {
     opacity: 0;
@@ -21,7 +20,7 @@ const appearFromBelow = keyframes`
 `
 
 export const IntegrationsSection = styled.section`
-  height: 80vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -51,7 +50,8 @@ export const IntegracionsTitles = styled.article`
     color: transparent;
     font-size: 4vw;
     font-weight: bold;
-    animation: ${appearFromBelow} 1.3s ease-in-out;
+    animation: ${(props) => (props.animate ? appearFromBelow : 'none')} 1.3s
+      ease-in-out;
 
     @media (max-width: 768px) {
       font-size: 10vw;
@@ -63,7 +63,8 @@ export const IntegracionsTitles = styled.article`
     font-weight: 300;
     color: ${({ theme }) => theme.currentTheme['--text-100']};
     text-align: center;
-    animation: ${appearFromBelow} 1.6s ease-in-out;
+    animation: ${(props) => (props.animate ? appearFromBelow : 'none')} 1.6s
+      ease-in-out;
 
     @media (max-width: 768px) {
       font-size: 6vw;
@@ -86,7 +87,7 @@ export const LogosArticle = styled.article`
   height: 2auto;
   gap: 3vw;
   margin-top: 5vw;
-  animation: ${fadeIn} 3s ease-in-out;
+  animation: ${(props) => (props.animate ? fadeIn : 'none')} 3s ease-in-out;
 
   @media (max-width: 768px) {
     width: 90vw;
