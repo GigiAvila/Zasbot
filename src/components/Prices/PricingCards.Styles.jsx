@@ -111,6 +111,7 @@ export const PlanSubtitle = styled.h4`
 export const Feature = styled.li`
   font-size: 1vw;
   padding: 0.1vw;
+  display: flex;
 
   color: ${(props) =>
     props.textColor
@@ -119,7 +120,7 @@ export const Feature = styled.li`
   font-weight: ${(props) => (props.bold ? 'bold' : '300')};
 
   &::before {
-    content: '${(props) => (props.icon ? '✕' : '✓')}';
+    content: '✓';
     margin-right: 0.2vw;
   }
 
@@ -129,15 +130,32 @@ export const Feature = styled.li`
   }
 `
 
+export const InfoIconWrapper = styled.div`
+  width: 1vw;
+  height: auto;
+  filter: invert(50%);
+  margin-left: 0.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  > img {
+    width: 100%;
+    height: auto;
+  }
+`
+
 export const FeaturesList = styled.ul`
   width: 100%;
   list-style: none;
   line-height: 2;
-  margin: 0.5vw 0;
   display: flex;
   flex-direction: column;
   padding: 1vw 2vw;
-
   @media (max-width: 768px) {
     margin-bottom: 10vw;
     text-align: start;

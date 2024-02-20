@@ -14,14 +14,12 @@ export const FetchContactData = () => {
       )
       const result = await response.json()
       setFetchData(result)
-      console.log(result)
     } catch (error) {
       console.error('Error fetching data:', error)
     }
   }
 
   const sendGmail = async (data) => {
-    console.log('data in sendGmail', data)
     const url = 'https://zasbot-back.vercel.app/api/email/send-email'
 
     try {
@@ -37,8 +35,7 @@ export const FetchContactData = () => {
         throw new Error('Error in response: ' + response.statusText)
       }
 
-      const responseData = await response.json()
-      console.log('Email sent correctly:', responseData)
+      await response.json()
     } catch (error) {
       console.error('Error sending email:', error.message)
     }
@@ -46,8 +43,6 @@ export const FetchContactData = () => {
 
   const postNewForm = async (data) => {
     try {
-      console.log(data)
-
       const response = await fetch(
         'https://zasbot-back.vercel.app/api/form/new-form',
         {
@@ -65,8 +60,7 @@ export const FetchContactData = () => {
         throw new Error(errorData.message)
       }
 
-      const result = await response.json()
-      console.log('POST response:', result)
+      await response.json()
       sendGmail(data)
       fetchDataFromApi()
     } catch (error) {

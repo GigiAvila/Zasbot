@@ -1,3 +1,4 @@
+import * as React from 'react'
 import { FEATURES } from '../../data/PricingFeatures'
 import {
   PaymentOptionsWrapper,
@@ -14,20 +15,73 @@ import {
   BuyButton,
   PriceAnchor,
   StyledLink,
-  Tag
+  Tag,
+  InfoIconWrapper
 } from './PricingCards.Styles'
 import { useTheme } from '../../hooks/UseTheme'
+import { styled } from '@mui/material/styles'
+import Tooltip, { tooltipClasses } from '@mui/material/Tooltip'
+import Typography from '@mui/material/Typography'
+import InfoIcon from './Assets/InfoIcon.png'
 
 export const PricingCards = () => {
   const { currentTheme } = useTheme()
 
   const renderFeatures = (plan) => {
-    return FEATURES[plan].map((feature, index) => (
-      <Feature theme={{ currentTheme }} key={index}>
-        {feature}
-      </Feature>
-    ))
+    return FEATURES[plan].map((feature, index) => {
+      let tooltipTitle = ''
+      let tooltipText = ''
+
+      if (feature.toLowerCase().includes('bot users')) {
+        tooltipTitle = 'Bot User'
+        tooltipText =
+          'Usuarios que interactúan con tus bots. Cantidad de conversaciones ilimitadas por Bot User.'
+      } else if (feature.toLowerCase().includes('omnicanal')) {
+        tooltipTitle = 'Omnicanal'
+        tooltipText =
+          'Con esta función podrás centralizar todos los canales en un único bot. Whatsapp, Instagram, Facebook ¡Todo con un único bot!'
+      } else if (feature.toLowerCase().includes('bot')) {
+        tooltipTitle = 'Bot'
+        tooltipText =
+          'Es un robot que automatiza flujos de conversaciones con capacidad de integrarse a diversas aplicaciones. Posibilita el hand-off a un humano.'
+      }
+
+      return (
+        <Feature theme={{ currentTheme }} key={index}>
+          {tooltipTitle ? <span>{feature}</span> : <span>{feature}</span>}
+          {tooltipTitle && (
+            <CustomTooltip
+              title={
+                <React.Fragment>
+                  <Typography color='inherit'>{tooltipTitle}</Typography>
+                  {tooltipText && <em>{tooltipText}</em>}
+                </React.Fragment>
+              }
+            >
+              <InfoIconWrapper>
+                <img
+                  src={InfoIcon}
+                  alt='Pasa el cursor por arriba del elemento para más información'
+                />
+              </InfoIconWrapper>
+            </CustomTooltip>
+          )}
+        </Feature>
+      )
+    })
   }
+
+  const CustomTooltip = styled(({ className, ...props }) => (
+    <Tooltip {...props} classes={{ popper: className }} />
+  ))(({ theme }) => ({
+    [`& .${tooltipClasses.tooltip}`]: {
+      backgroundColor: '#2d2d2d',
+      color: '#f2f2f2',
+      maxWidth: 300,
+      fontSize: theme.typography.pxToRem(15),
+      border: '1px solid #ddb900'
+    }
+  }))
 
   return (
     <>
@@ -36,7 +90,7 @@ export const PricingCards = () => {
           <PaymentOptionTitle>
             <PlanTitle theme={{ currentTheme }}>Básico</PlanTitle>
             <PlanPriceContainer>
-              <PlanPrice theme={{ currentTheme }}>19 UDS</PlanPrice>
+              <PlanPrice theme={{ currentTheme }}>19 USD</PlanPrice>
               <PriceFrequency theme={{ currentTheme }}>
                 / por mes
               </PriceFrequency>
@@ -67,7 +121,7 @@ export const PricingCards = () => {
           <PaymentOptionTitle>
             <PlanTitle theme={{ currentTheme }}>Business</PlanTitle>
             <PlanPriceContainer>
-              <PlanPrice theme={{ currentTheme }}>49 UDS</PlanPrice>
+              <PlanPrice theme={{ currentTheme }}>49 USD</PlanPrice>
               <PriceFrequency theme={{ currentTheme }}>
                 / por mes
               </PriceFrequency>
@@ -97,7 +151,7 @@ export const PricingCards = () => {
           <PaymentOptionTitle>
             <PlanTitle theme={{ currentTheme }}>Business Plus</PlanTitle>
             <PlanPriceContainer>
-              <PlanPrice theme={{ currentTheme }}>149 UDS</PlanPrice>
+              <PlanPrice theme={{ currentTheme }}>149 USD</PlanPrice>
               <PriceFrequency theme={{ currentTheme }}>
                 / por mes
               </PriceFrequency>
