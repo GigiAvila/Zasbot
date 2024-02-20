@@ -96,6 +96,7 @@ export const PriceFrequency = styled.h5`
 `
 
 export const PlanSubtitle = styled.h4`
+  height: 8vh;
   font-size: 0.9vw;
   padding: 0.5vw 0;
   text-align: center;
