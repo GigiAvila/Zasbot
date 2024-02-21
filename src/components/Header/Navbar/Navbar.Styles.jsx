@@ -82,21 +82,18 @@ export const NavElement = styled.li`
   }
 `
 export const MenuIconContainer = styled.div`
-width: 7vw;
-height: auto;
-display: flex;
-justify-content: center;
-align-items: center;
-
-
-> img {
-  width: 100%;
+  width: 7vw;
   height: auto;
-  filter: invert(100%);
-}
 
-@media (min-width:1023px) {
-  display: none;
+  > img {
+    width: 100%;
+    height: auto;
+    display: none;
+    filter: invert(100%);
+    @media (max-width: 768px) {
+      display: inline-flex;
+    }
+  }
 `
 
 export const LoginButton = styled.button`
