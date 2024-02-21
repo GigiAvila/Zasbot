@@ -160,6 +160,11 @@ export const ThundersBG = styled.div`
   }
 `
 
+export const ErrorSpan = styled.span`
+  color: red;
+  font-size: 0.7vw;
+`
+
 export const CustomCheckbox = styled.label`
   position: relative;
   display: flex;
