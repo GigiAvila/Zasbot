@@ -82,12 +82,12 @@ export const NavElement = styled.li`
   }
 `
 export const MenuIconContainer = styled.div`
-width: 6vw;
+width: 7vw;
 height: auto;
 display: flex;
 justify-content: center;
 align-items: center;
-margin: 2vw;
+
 
 > img {
   width: 100%;

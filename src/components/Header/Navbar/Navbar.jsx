@@ -64,7 +64,7 @@ const Navbar = () => {
           {!isHome ? (
             <Link to='/home'>{NAVBAR_INTEGRATIONS}</Link>
           ) : (
-            <a href='#testimonies'>{NAVBAR_INTEGRATIONS}</a>
+            <a href='#integrations'>{NAVBAR_INTEGRATIONS}</a>
           )}
         </NavElement>
         <NavElement onClick={toggleMenu} theme={{ currentTheme }}>
