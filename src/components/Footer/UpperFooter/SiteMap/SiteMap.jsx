@@ -42,6 +42,9 @@ const SiteMap = () => {
 
   const handleSubrouteClick = (subroute) => {
     switch (subroute) {
+      case 'Preguntas frecuentes':
+        window.location.href = '/faqs'
+        break
       // case 'Tutoriales':
       //   window.open(
       //     'https://www.youtube.com/channel/UCiCyOh5u3JXzl6sNsFFSSzg',

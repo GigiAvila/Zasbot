@@ -73,6 +73,9 @@ const Navbar = () => {
         <NavElement onClick={toggleMenu} theme={{ currentTheme }}>
           <Link to='/prices'>{NAVBAR_PRICES}</Link>
         </NavElement>
+        <NavElement onClick={toggleMenu} theme={{ currentTheme }}>
+          <Link to='/faqs'>FAQs</Link>
+        </NavElement>
         <li>
           <LoginAnchor
             href='https://app.zasbot.com/login'

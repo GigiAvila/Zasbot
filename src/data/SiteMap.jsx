@@ -24,6 +24,6 @@ export const ES_SITEMAP = [
   },
   {
     title: 'SOPORTE',
-    subroutes: ['Contáctanos']
+    subroutes: ['Contáctanos', 'Preguntas frecuentes']
   }
 ]
