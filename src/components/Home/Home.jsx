@@ -29,10 +29,10 @@ const Home = () => {
       <HeroWrapper>
         <HomeTextArticle theme={{ currentTheme }}>
           <h1>
-            La #1{' '}
+            Automatiza tu empresa{' '}
             <HomeSpan theme={{ currentTheme }}>
               {' '}
-              plataforma conversacional
+              con Chatbots inteligentes
             </HomeSpan>{' '}
           </h1>
           <h2>{HOME_SLOGAN}</h2>

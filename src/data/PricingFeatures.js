@@ -1,30 +1,32 @@
 export const FEATURES = {
   basic: [
-    'Incluye todas las integraciones',
+    'Bot Omnicanal',
+    'Canales Facebook e Instagram ',
+    'Chatweb',
     '1 bot',
     '1 usuario',
-    '200 bot users'
+    '200 bot users',
+    '14 días gratuitos con todas las funcionalidades'
   ],
   business: [
+    'Funcionalidades del plan Básico',
+    'Incluye todos los canales',
     'Incluye todas las integraciones',
     '1 bot',
     '5 usuarios',
-    '1000 bot users',
-    'Bot Omnicanal'
+    '1000 bot users'
   ],
   businessPlus: [
-    'Incluye todas las integraciones',
+    'Funcionalidades Business',
     '5 bots',
     '5 usuarios',
-    '11.000 bot users',
-    'Bot Omnicanal'
+    '11.000 bot users'
   ],
   enterprise: [
-    'Incluye todas las integraciones',
+    'Funcionalidades Business Plus',
     'Bots a medida',
     'Usuarios a medida',
     'Bot users a medida',
-    'Bot Omnicanal',
     'Soporte especializado'
   ]
 }

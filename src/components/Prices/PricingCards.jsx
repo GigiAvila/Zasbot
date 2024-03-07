@@ -39,11 +39,32 @@ export const PricingCards = () => {
       } else if (feature.toLowerCase().includes('omnicanal')) {
         tooltipTitle = 'Omnicanal'
         tooltipText =
-          'Con esta función podrás centralizar todos los canales en un único bot. Whatsapp, Instagram, Facebook ¡Todo con un único bot!'
+          'Con esta función podrás centralizar todos los canales en un único bot.'
       } else if (feature.toLowerCase().includes('bot')) {
         tooltipTitle = 'Bot'
         tooltipText =
           'Es un robot que automatiza flujos de conversaciones con capacidad de integrarse a diversas aplicaciones. Posibilita el hand-off a un humano.'
+      } else if (feature.toLowerCase().includes('incluye todos los canales')) {
+        tooltipTitle = 'Canales'
+        tooltipText = 'Incluye Whatsapp.'
+      } else if (
+        feature.toLowerCase().includes('incluye todas las integraciones')
+      ) {
+        tooltipTitle = 'Integraciones'
+        tooltipText = (
+          <>
+            Para más información, haz click{' '}
+            <a
+              href='https://www.zasbot.com/home#integrations'
+              target='_blank'
+              rel='noopener noreferrer'
+              style={{ color: 'white' }}
+            >
+              aquí
+            </a>
+            .
+          </>
+        )
       }
 
       return (

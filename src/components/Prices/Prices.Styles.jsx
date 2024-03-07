@@ -25,4 +25,8 @@ export const TaxText = styled.p`
   align-self: flex-end;
   font-size: 1vw;
   font-style: italic;
+
+  @media (max-width: 768px) {
+    font-size: 3vw;
+  }
 `

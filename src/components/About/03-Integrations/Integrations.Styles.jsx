@@ -84,8 +84,8 @@ export const LogosArticle = styled.article`
   align-items: center;
   flex-wrap: wrap;
   width: 60%;
-  height: 2auto;
-  gap: 3vw;
+  height: auto;
+  gap: 2vw;
   margin-top: 5vw;
   animation: ${(props) => (props.animate ? fadeIn : 'none')} 3s ease-in-out;
 
@@ -96,7 +96,7 @@ export const LogosArticle = styled.article`
 `
 export const LogoBg = styled.div`
   position: relative;
-  padding: 1.2vw;
+  padding: 1.5vw;
   border-radius: 8px;
   backdrop-filter: blur(10px);
 
@@ -120,7 +120,7 @@ export const LogoBg = styled.div`
 
 export const LogoWrapper = styled.div`
   width: auto;
-  height: 9vh;
+  height: 6vh;
   display: flex;
 
   @media (max-width: 768px) {

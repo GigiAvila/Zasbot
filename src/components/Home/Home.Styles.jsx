@@ -51,17 +51,17 @@ export const HomeTextArticle = styled.article`
   flex-direction: column;
   gap: 2vw;
   padding: 2vw;
-  width: 50vw;
+  width: 65vw;
 
   > h1 {
-    font-size: 6vw;
+    font-size: 4vw;
     font-weight: 800;
     letter-spacing: 0.05vw;
     color: ${({ theme }) => theme.currentTheme['--text-100']};
     animation: ${fadeIn} 1.5s ease-in-out;
 
     @media (max-width: 768px) {
-      font-size: 11vw;
+      font-size: 10vw;
       text-align: center;
     }
   }
@@ -90,11 +90,16 @@ export const HomeTextArticle = styled.article`
 
 export const HomeSpan = styled.span`
   color: ${({ theme }) => theme.currentTheme['--accent-400']};
+  font-size: 4vw;
+
+  @media (max-width: 768px) {
+    font-size: 10vw;
+  }
 `
 
 export const HomeImgArticle = styled.article`
   padding: 2vw;
-  width: 100%;
+  width: 35vw;
   height: auto;
   display: flex;
   justify-content: center;
@@ -107,6 +112,15 @@ export const HomeImgArticle = styled.article`
     border-radius: 8px;
     box-shadow: 10px 5px 40px 5px
       ${({ theme }) => `${theme.currentTheme['--bg-400']}80`};
+  }
+
+  @media (max-width: 768px) {
+    width: auto;
+    height: 80vh;
+
+    > video {
+      width: auto;
+      height: 100%;
   }
 `
 

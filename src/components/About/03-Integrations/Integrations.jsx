@@ -14,7 +14,7 @@ import FacebookImg from './Assets/facebook.svg'
 import GmailImg from './Assets/gmail.svg'
 import InstagramImg from './Assets/instagram.svg'
 import MailChimpImg from './Assets/mailchimp.svg'
-import OpenIAImg from './Assets/openIA.png'
+import OpenIAImg from './Assets/openIA1.png'
 import PaypalImg from './Assets/paypal.svg'
 import SheetsImg from './Assets/sheets.svg'
 import StripeImg from './Assets/stripe.svg'
@@ -22,6 +22,8 @@ import TwillioImg from './Assets/twillio.svg'
 import ZapierImg from './Assets/zapier.svg'
 import WhatsappImg from './Assets/whatsapp.svg'
 import SlackImg from './Assets/slack.svg'
+import ShopifyImg from './Assets/shopify.svg'
+import GoogleTagImg from './Assets/googleTag.png'
 
 const Integrations = () => {
   const { currentTheme } = useTheme()
@@ -37,7 +39,9 @@ const Integrations = () => {
     TwillioImg,
     ZapierImg,
     WhatsappImg,
-    SlackImg
+    SlackImg,
+    ShopifyImg,
+    GoogleTagImg
   ]
   const [scrollY, setScrollY] = useState(0)
   const [animate, setAnimate] = useState(false)

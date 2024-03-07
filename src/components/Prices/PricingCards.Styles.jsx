@@ -32,7 +32,8 @@ export const Tag = styled.h6`
   border-radius: 15px;
   font-size: 0.8vw;
   position: absolute;
-  left: 1.8vw;
+  left: 1.5vw;
+  top: 0;
   text-align: center;
   margin: 1vw 0;
   display: flex;
@@ -52,7 +53,7 @@ export const PaymentOptionTitle = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 2vw;
+  padding: 1.5vw;
   position: relative;
 
   @media (max-width: 768px) {
@@ -111,9 +112,7 @@ export const PlanSubtitle = styled.h4`
 `
 export const Feature = styled.li`
   font-size: 1vw;
-  padding: 0.1vw;
   display: flex;
-
   color: ${(props) =>
     props.textColor
       ? props.theme.currentTheme['--text-400']
@@ -156,7 +155,7 @@ export const FeaturesList = styled.ul`
   line-height: 2;
   display: flex;
   flex-direction: column;
-  padding: 1vw 2vw;
+  padding: 1vw;
   @media (max-width: 768px) {
     margin-bottom: 10vw;
     text-align: start;
