@@ -136,13 +136,16 @@ export const SpanWrapper = styled.div`
 
   > span {
     font-size: 1.2vw;
+    flex: 1;
     width: 100%;
     height: 100%;
     text-align: center;
     color: ${({ theme }) => theme.currentTheme['--primary-200']};
+  
 
     @media (max-width: 768px) {
       font-size: 3vw;
+      padding-bottom: 1vw;
     }
 
     &:first-child {
@@ -171,9 +174,11 @@ export const SpanWrapperInfoNumber = styled.div`
     height: 100%;
     text-align: center;
     color: ${({ theme }) => theme.currentTheme['--primary-200']};
+    align-self: flex-start; 
 
     @media (max-width: 768px) {
       font-size: 3vw;
+      padding-bottom: 1vw;
     }
 
     &:first-child {
@@ -182,6 +187,7 @@ export const SpanWrapperInfoNumber = styled.div`
 
     &:last-child {
       animation: ${moveUp} 0.5s linear;
+      align-self: flex-start; 
     }
   }
 };
