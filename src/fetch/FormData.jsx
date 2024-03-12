@@ -14,6 +14,7 @@ export const FetchContactData = () => {
       )
       const result = await response.json()
       setFetchData(result)
+      console.log(result)
     } catch (error) {
       console.error('Error fetching data:', error)
     }

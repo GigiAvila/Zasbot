@@ -51,7 +51,9 @@ const ContactForm = () => {
     acceptedPolicy: false
   })
 
-  const onSubmit = (data) => {
+  const onSubmit = () => {
+    const data = { ...formData, acceptedPolicy: true }
+    console.log(data)
     if (data.acceptedPolicy) {
       postNewForm(data)
       setIsOpen(true)
