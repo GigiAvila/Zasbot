@@ -20,6 +20,11 @@ export const CompanyDataContainer = styled.div`
   gap: 0.6vw;
   width: 25vw;
 
+  > p {
+    font-size: 0.8vw;
+    color: white;
+  }
+
   @media (max-width: 768px) {
     width: 50vw;
     padding: 1vw 0;

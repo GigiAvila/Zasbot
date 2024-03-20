@@ -25,6 +25,10 @@ const CompanyInfo = () => {
           <h1>{FOOTER_COMPANY_EMAIL}</h1>
           <h1>{FOOTER_COMPANY_PHONE}</h1>
         </CompanyContactInformationContainer>
+        <p>
+          {' '}
+          Zasbot, LLC 651 N Broad St, Suite 201, Middletown, New Castle 19709
+        </p>
       </CompanyDataContainer>
     </CompanyContainer>
   )
