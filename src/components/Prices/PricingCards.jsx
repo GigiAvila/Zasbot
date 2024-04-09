@@ -47,6 +47,10 @@ export const PricingCards = () => {
       } else if (feature.toLowerCase().includes('incluye todos los canales')) {
         tooltipTitle = 'Canales'
         tooltipText = 'Incluye Whatsapp.'
+      } else if (feature.toLowerCase().includes('campañas y difusiones')) {
+        tooltipTitle = 'Campañas'
+        tooltipText =
+          'Con esta funcionalidad, podrás realizar acciones de difusión a los Bots Users a través de Whatsapp, Email, Facebook e Instagram'
       } else if (
         feature.toLowerCase().includes('incluye todas las integraciones')
       ) {

@@ -6,6 +6,7 @@ export const Nav = styled.nav`
   justify-content: space-evenly;
   gap: 1vw;
   padding: 1vw;
+  margin-right: 2vw;
 `
 
 export const NavList = styled.ul`

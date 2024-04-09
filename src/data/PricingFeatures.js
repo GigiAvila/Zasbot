@@ -1,6 +1,5 @@
 export const FEATURES = {
   basic: [
-    'Bot Omnicanal',
     'Canales Facebook e Instagram ',
     'Chatweb',
     '1 bot',
@@ -10,6 +9,7 @@ export const FEATURES = {
   ],
   business: [
     'Funcionalidades del plan Básico',
+    'Bot Omnicanal',
     'Incluye todos los canales',
     'Incluye todas las integraciones',
     '1 bot',
@@ -18,9 +18,10 @@ export const FEATURES = {
   ],
   businessPlus: [
     'Funcionalidades Business',
-    '5 bots',
+    'Campañas y Difusiones',
+    '1 bot',
     '5 usuarios',
-    '11.000 bot users'
+    '10.000 bot users'
   ],
   enterprise: [
     'Funcionalidades Business Plus',

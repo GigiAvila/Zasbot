@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import CompanyLogo from './Assets/CompanyLogo.png'
+import CompanyLogo from './Assets/logo.png'
 import { CompanyLogoWrapper } from './CompanyName.Styles'
 
 const CompanyName = () => {
