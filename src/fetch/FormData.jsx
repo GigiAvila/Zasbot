@@ -10,7 +10,7 @@ export const FetchContactData = () => {
   const fetchDataFromApi = async () => {
     try {
       const response = await fetch(
-        'https://zasbot-back.vercel.app/api/form/all-forms'
+        'https://zasbot-back-alpha.vercel.app/api/form/all-forms'
       )
       const result = await response.json()
       setFetchData(result)
@@ -20,7 +20,7 @@ export const FetchContactData = () => {
   }
 
   const sendGmail = async (data) => {
-    const url = 'https://zasbot-back.vercel.app/api/email/send-email'
+    const url = 'https://zasbot-back-alpha.vercel.app/api/email/send-email'
 
     try {
       const response = await fetch(url, {
@@ -44,7 +44,7 @@ export const FetchContactData = () => {
   const postNewForm = async (data) => {
     try {
       const response = await fetch(
-        'https://zasbot-back.vercel.app/api/form/new-form',
+        'https://zasbot-back-alpha.vercel.app/api/form/new-form',
         {
           method: 'POST',
           headers: {
