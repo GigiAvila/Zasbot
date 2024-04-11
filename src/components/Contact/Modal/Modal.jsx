@@ -11,7 +11,7 @@ import {
   InfotextContainer
 } from './Modal.Styles'
 import CloseIcon from './Assets/close.svg'
-import CompanyLogo from './Assets/CompanyLogo.png'
+import CompanyLogo from './Assets/logo.png'
 
 const Modal = ({ isOpen, setIsOpen }) => {
   const handleModalOpen = () => {
