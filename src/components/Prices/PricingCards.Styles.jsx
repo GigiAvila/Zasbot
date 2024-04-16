@@ -312,7 +312,7 @@ export const PaymentOption = styled.div`
   &:hover {
     background: linear-gradient(
       ${({ theme }) => theme.currentTheme['--primary-100']},
-      ${({ theme }) => theme.currentTheme['--primary-300']}
+      ${({ theme }) => theme.currentTheme['--accent-100']}
     );
   }
 

@@ -111,7 +111,7 @@ export const HomeImgArticle = styled.article`
     border: 6px solid black;
     border-radius: 8px;
     box-shadow: 10px 5px 40px 5px
-      ${({ theme }) => `${theme.currentTheme['--bg-400']}80`};
+      ${({ theme }) => `${theme.currentTheme['--primary-100']}80`};
   }
 
   @media (max-width: 768px) {

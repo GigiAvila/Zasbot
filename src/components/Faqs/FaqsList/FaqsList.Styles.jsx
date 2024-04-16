@@ -82,13 +82,13 @@ export const NavElement = styled.li`
   flex-direction: column;
   gap: 1vw;
   padding: 1.5vw;
-  border-bottom: 1px solid ${({ theme }) => theme.currentTheme['--primary-200']};
+  border-bottom: 1px solid ${({ theme }) => theme.currentTheme['--primary-100']};
   position: relative;
   cursor: pointer;
 
   &:hover {
     border-bottom: 2px solid
-      ${({ theme }) => theme.currentTheme['--primary-200']};
+      ${({ theme }) => theme.currentTheme['--primary-100']};
 
     ${Title} {
       transition: font-weight 0.6s ease-in-out;
@@ -118,7 +118,7 @@ export const NavElement = styled.li`
     left: 0;
     width: 0;
     height: 2px;
-    background-color: ${({ theme }) => theme.currentTheme['--primary-200']};
+    background-color: ${({ theme }) => theme.currentTheme['--primary-100']};
     transition: width 0.6s ease;
   }
 `
@@ -140,7 +140,7 @@ export const SpanWrapper = styled.div`
     width: 100%;
     height: 100%;
     text-align: center;
-    color: ${({ theme }) => theme.currentTheme['--primary-200']};
+    color: ${({ theme }) => theme.currentTheme['--primary-100']};
   
 
     @media (max-width: 768px) {
@@ -173,7 +173,7 @@ export const SpanWrapperInfoNumber = styled.div`
     width: 100%;
     height: 100%;
     text-align: center;
-    color: ${({ theme }) => theme.currentTheme['--primary-200']};
+    color: ${({ theme }) => theme.currentTheme['--primary-100']};
     align-self: flex-start; 
 
     @media (max-width: 768px) {

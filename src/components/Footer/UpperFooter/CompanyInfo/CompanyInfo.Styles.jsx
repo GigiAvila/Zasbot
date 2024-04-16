@@ -23,6 +23,11 @@ export const CompanyDataContainer = styled.div`
   > p {
     font-size: 0.8vw;
     color: white;
+
+    @media (max-width: 768px) {
+      font-size: 2.5vw;
+      font-weight: 300;
+    }
   }
 
   @media (max-width: 768px) {
