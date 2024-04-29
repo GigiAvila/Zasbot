@@ -115,10 +115,7 @@ export const PricingCards = () => {
           <PaymentOptionTitle>
             <PlanTitle theme={{ currentTheme }}>Básico</PlanTitle>
             <PlanPriceContainer>
-              <PlanPrice theme={{ currentTheme }}>19 USD</PlanPrice>
-              <PriceFrequency theme={{ currentTheme }}>
-                / por mes
-              </PriceFrequency>
+              <PlanPrice theme={{ currentTheme }}>Gratis</PlanPrice>
             </PlanPriceContainer>
           </PaymentOptionTitle>
           <CustomBorder />

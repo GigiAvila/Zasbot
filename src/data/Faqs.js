@@ -3,7 +3,8 @@ export const FAQS = [
     number: '01',
     question: '¿Es posible obtener una prueba gratuita?',
     answer: [
-      '¡Sí! Tienes la posibilidad de utilizar Zasbot por 14 días con todas las funcionalidades posibles. Luego de esos 14 días, deberás optar por un plan pago. Para obtener una prueba gratuita, debe registrarse aquí.'
+      '¡Sí! Tienes la posibilidad de utilizar Zasbot por 14 días con todas las funcionalidades posibles. Luego de esos 14 días, deberás optar por un plan pago. Para obtener una prueba gratuita, debe registrarse aquí.',
+      '¡De cualquier manera, nuestro plan Básico es sin costo! Eso significa que posterior a los 14 días, vas a poder utilizar Zasbot con sus funciones más básicas.'
     ]
   },
   {
