@@ -100,12 +100,13 @@ export const LoginButton = styled.button`
   outline: none;
   border: none;
   color: ${({ theme }) => theme.currentTheme['--text-400']};
-  background-color: ${({ theme }) => theme.currentTheme['--primary-200']};
+  background-color: ${({ theme }) => theme.currentTheme['--primary-100']};
   width: 5vw;
   height: 100%;
 
   &:hover {
-    background-color: ${({ theme }) => theme.currentTheme['--primary-100']};
+    background-color: ${({ theme }) => theme.currentTheme['--accent-200']};
+    color: ${({ theme }) => theme.currentTheme['--text-100']};
   }
 
   @media (max-width: 768px) {

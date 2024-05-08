@@ -1,7 +1,13 @@
+// #031521 (Bg)
+// #FFF63B (primary)
+// #EF5522 (naranja -accent)
+// #43345B (violeta)
+// #DCB903 (mostaza - secondary)
+
 export const darkPalette = {
   '--primary-100': '#FFF63B', // amarillo
-  '--primary-200': '#ddb900', // mostaza
-  '--accent-100': '#c49216', // VER SI QUEDA
+  '--primary-200': '#DCB903', // mostaza
+  '--accent-200': '#43345B',
   '--accent-300': '#FFF63B', // amarillo
   '--accent-400': '#FFF63B', // amarillo
   '--text-100': '#ffffff', // blanco
@@ -27,3 +33,5 @@ export const lightPalette = {
   '--bg-200': '#2d2d2d',
   '--bg-300': '#ffffff'
 }
+
+//

@@ -33,6 +33,7 @@ export const Form = styled.form`
 
 export const Label = styled.label`
   font-weight: bold;
+  font-size: 0.9em;
   margin-bottom: 0.5vw;
   color: ${({ theme }) => theme.currentTheme['--text-100']};
 
@@ -45,10 +46,9 @@ export const Label = styled.label`
 
 export const PrivatePolicyAnchor = styled.a`
   text-decoration: none;
-  color: ${({ theme }) => theme.currentTheme['--accent-300']};
 
   > span {
-    color: ${({ theme }) => theme.currentTheme['--accent-300']};
+    color: ${({ theme }) => theme.currentTheme['--primary-200']};
 
     &:hover {
       text-decoration: none;
@@ -116,25 +116,25 @@ export const PhoneDiv = styled.div`
 `
 
 export const OptionalText = styled.span`
-  font-size: 0.8em;
-  color: ${({ theme }) => theme.currentTheme['--accent-100']};
+  font-size: 0.7em;
+  color: ${({ theme }) => theme.currentTheme['--primary-200']};
   margin-left: 5px;
 `
 
 export const SubmitButton = styled.button`
-  padding: 1vw;
-  background-color: ${({ theme }) => theme.currentTheme['--accent-100']};
+  padding: 0.5vw 1vw;
+  background-color: ${({ theme }) => theme.currentTheme['--primary-100']};
   color: ${({ theme }) => theme.currentTheme['--text-300']};
   border: none;
-
+  font-size: 0.9em;
   cursor: pointer;
   transition: background-color 0.3s;
   align-self: flex-end;
   margin-right: 1vw;
 
   &:hover {
-    background-color: ${({ theme }) => theme.currentTheme['--accent-400']};
-    color: ${({ theme }) => theme.currentTheme['--text-400']};
+    background-color: ${({ theme }) => theme.currentTheme['--accent-200']};
+    color: ${({ theme }) => theme.currentTheme['--text-100']};
   }
 
   @media (max-width: 768px) {
@@ -189,7 +189,7 @@ export const StyledCheckbox = styled.div`
   width: 25px;
   height: 25px;
   position: relative;
-  border: 2px solid ${({ theme }) => theme.currentTheme['--accent-400']};
+  border: 2px solid ${({ theme }) => theme.currentTheme['--primary-200']};
   background-color: ${({ theme }) => theme.currentTheme['--bg-300']};
   transition: background-color 0.3s;
 

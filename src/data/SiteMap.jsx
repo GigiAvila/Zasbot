@@ -15,8 +15,28 @@ export const EN_SITEMAP = [
 
 export const ES_SITEMAP = [
   {
+    title: 'INTEGRACIONES',
+    subroutes: [
+      'Todos los canales',
+      'WhatsApp',
+      'Facebook',
+      'Instagram',
+      'Slack',
+      'ChatGPT'
+      // 'Gmail',
+      // 'PayPal',
+      // 'MailChimp'
+      // 'Google Sheets',
+      // 'Zapier',
+      // 'Twilio',
+      // 'Shopify',
+      // 'Stripe',
+      // 'Google Tag Manager'
+    ]
+  },
+  {
     title: 'PRODUCTO',
-    subroutes: ['Integraciones', 'Flujograma', 'Live-chat', 'Precios']
+    subroutes: ['Flujograma', 'Live-chat', 'Precios']
   },
   {
     title: 'EMPRESA',

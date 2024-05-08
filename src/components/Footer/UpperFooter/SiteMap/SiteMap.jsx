@@ -60,9 +60,7 @@ const SiteMap = () => {
       case 'Login':
         window.open('https://app.zasbot.com/login', '_blank')
         break
-      case 'Integraciones':
-        window.location.href = '/home#integrations'
-        break
+
       default:
         break
     }

@@ -17,7 +17,6 @@ import {
   ErrorSpan
 } from './ContactForm.Styles'
 import { useTheme } from '../../../hooks/UseTheme'
-import ThunderImage from '../Assets/thunders.png'
 import { FetchContactData } from '../../../fetch/FormData'
 import {
   CONTACT_BUTTON_TEXT,
@@ -65,7 +64,10 @@ const ContactForm = () => {
     <>
       <FormWrapper theme={{ currentTheme }}>
         <ThundersBG>
-          <img src={ThunderImage} alt='Thunder Background Image' />
+          <img
+            src='https://res.cloudinary.com/dqdyvyknw/image/upload/v1714386729/thunders_yt9bpt.png'
+            alt='Thunder Background Image'
+          />
         </ThundersBG>
         <Form onSubmit={handleSubmit(onSubmit)} theme={{ currentTheme }}>
           <Label htmlFor='name' theme={{ currentTheme }}>

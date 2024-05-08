@@ -310,10 +310,7 @@ export const PaymentOption = styled.div`
   }
 
   &:hover {
-    background: linear-gradient(
-      ${({ theme }) => theme.currentTheme['--primary-100']},
-      ${({ theme }) => theme.currentTheme['--accent-100']}
-    );
+     background-color: ${({ theme }) => theme.currentTheme['--primary-200']};
   }
 
   &:hover ${Tag} {

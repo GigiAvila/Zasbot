@@ -102,7 +102,6 @@ export const ContactButton = styled.button`
   }
 
   > *:hover {
-    font-size: 1vw;
     text-decoration: none;
     color: black;
   }
