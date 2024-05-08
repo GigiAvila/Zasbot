@@ -1,1 +1,1 @@
-export const WS_PHONE_NUMBER = '+34636595002'
+export const WS_PHONE_NUMBER = '+5491153317809'
