@@ -19,9 +19,11 @@ import {
 import MenuIcon from './Assets/menu.svg'
 import CloseMenuIcon from './Assets/close.svg'
 import { useTheme } from '../../../hooks/UseTheme'
+import { useLocomotiveScroll } from 'react-locomotive-scroll'
 
 const Navbar = () => {
   const { currentTheme } = useTheme()
+  const { scroll } = useLocomotiveScroll()
 
   const location = useLocation()
   const isHome = location.pathname === '/home'
@@ -29,6 +31,20 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen)
+  }
+
+  const handleScrollToTop = () => {
+    scroll.scrollTo(0, {
+      duration: 500,
+      disableLerp: true
+    })
+  }
+  const handleScrollToIntegrations = () => {
+    handleScrollToTop()
+    scroll.scrollTo(1000, {
+      duration: 500,
+      disableLerp: true
+    })
   }
 
   return (
@@ -55,26 +71,36 @@ const Navbar = () => {
       <NavList menuOpen={menuOpen} theme={{ currentTheme }}>
         <NavElement onClick={toggleMenu} theme={{ currentTheme }}>
           {!isHome ? (
-            <Link to='/home'>{NAVBAR_PRODUCT}</Link>
+            <Link to='/home' onClick={handleScrollToTop}>
+              {NAVBAR_PRODUCT}
+            </Link>
           ) : (
             <a href='#flowChart'>{NAVBAR_PRODUCT}</a>
           )}
         </NavElement>
         <NavElement onClick={toggleMenu} theme={{ currentTheme }}>
           {!isHome ? (
-            <Link to='/home'>{NAVBAR_INTEGRATIONS}</Link>
+            <Link to='/home' onClick={handleScrollToIntegrations}>
+              {NAVBAR_INTEGRATIONS}
+            </Link>
           ) : (
             <a href='#integrations'>{NAVBAR_INTEGRATIONS}</a>
           )}
         </NavElement>
         <NavElement onClick={toggleMenu} theme={{ currentTheme }}>
-          <Link to='/contact'>{NAVBAR_CONTACT}</Link>
+          <Link to='/contact' onClick={handleScrollToTop}>
+            {NAVBAR_CONTACT}
+          </Link>
         </NavElement>
         <NavElement onClick={toggleMenu} theme={{ currentTheme }}>
-          <Link to='/prices'>{NAVBAR_PRICES}</Link>
+          <Link to='/prices' onClick={handleScrollToTop}>
+            {NAVBAR_PRICES}
+          </Link>
         </NavElement>
         <NavElement onClick={toggleMenu} theme={{ currentTheme }}>
-          <Link to='/faqs'>FAQs</Link>
+          <Link to='/faqs' onClick={handleScrollToTop}>
+            FAQs
+          </Link>
         </NavElement>
         <li>
           <LoginAnchor

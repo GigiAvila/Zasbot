@@ -1,4 +1,3 @@
-import WhatsappButton from '../WhatsappButton/WhatsappButton'
 import { useTheme } from '../../hooks/UseTheme'
 import { PriceSection, PricingCardSection, TaxText } from './Prices.Styles'
 import PrincingTitles from './PrincingTitles'
@@ -16,8 +15,6 @@ const Prices = () => {
           * Los precios no incluyen impuestos
         </TaxText>
       </PricingCardSection>
-
-      <WhatsappButton />
     </PriceSection>
   )
 }

@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const AssistantContainer = styled.section`
   position: fixed;
+
   bottom: 7vw;
   right: 2vw;
   background-color: ${({ theme }) => theme.currentTheme['--bg-100']};
@@ -17,8 +18,9 @@ export const AssistantContainer = styled.section`
   display: ${({ toggleAssistant }) => (toggleAssistant ? 'block' : 'none')};
 
   @media (max-width: 768px) {
-    bottom: 15vh;
-  }
+    bottom: 10vh;
+    width: 75vw;
+
 `
 
 export const AssistantTitleArticle = styled.article`
@@ -50,8 +52,7 @@ export const VirtualAssistantContent = styled.article`
   }
 `
 export const AssistantImageContainer = styled.div`
-  width: 5vw;
-  padding: 1vw;
+  width: 6vw;
 
   > img {
     width: 100%;
@@ -59,10 +60,10 @@ export const AssistantImageContainer = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 10vw;
+    width: 25vw;
   
   > img {
-    width: 10vw;
+    width: 25vw;
     height: auto;
     border-radius: 50%;
   }
@@ -102,6 +103,8 @@ export const VirtualAssistantButton = styled.button`
 
   @media (max-width: 768px) {
     font-size: 3vw;
-    width: 10vw;
+    width: 15vw;
+    padding: 1vw 2vw;
+    margin: 0 2vw;
   }
 `

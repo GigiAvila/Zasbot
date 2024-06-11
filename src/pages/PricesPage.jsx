@@ -1,11 +1,7 @@
 import Prices from '../components/Prices/Prices'
 
 const PricesPage = () => {
-  return (
-    <>
-      <Prices />
-    </>
-  )
+  return <Prices />
 }
 
 export default PricesPage

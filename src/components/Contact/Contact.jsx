@@ -1,4 +1,3 @@
-import WhatsappButton from '../WhatsappButton/WhatsappButton'
 import ContactForm from './ContactForm/ContactForm'
 import { FormSection, ContactWrapper } from './Contact.Styles.jsx'
 import { useTheme } from '../../hooks/UseTheme.jsx'
@@ -12,7 +11,6 @@ const Contact = () => {
         <h1>{CONTACT_TITLE}</h1>
         <ContactForm />
       </ContactWrapper>
-      <WhatsappButton />
     </FormSection>
   )
 }

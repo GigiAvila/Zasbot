@@ -137,7 +137,7 @@ export const FlowChartTitles = styled.article`
   }
 `
 export const FlowVideo = styled.div`
-  width: 50%;
+  width: 70%;
   height: 100%;
   display: flex;
   padding: 0 2vw;

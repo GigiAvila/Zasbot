@@ -1,11 +1,7 @@
 import Faqs from '../components/Faqs/Faqs'
 
 const FaqsPage = () => {
-  return (
-    <>
-      <Faqs />
-    </>
-  )
+  return <Faqs />
 }
 
 export default FaqsPage

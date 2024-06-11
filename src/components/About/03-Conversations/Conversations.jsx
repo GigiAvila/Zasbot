@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react'
 import { useTheme } from '../../../hooks/UseTheme'
 import {
   ConversationsSection,
@@ -10,30 +9,7 @@ import DesktopImage from './Assets/chat1.png'
 import BGVector from './Assets/Vector.png'
 
 const Conversations = () => {
-  const [scrollY, setScrollY] = useState(0)
-  const [animate, setAnimate] = useState(false)
-  const isDesktop = window.innerWidth > 768
   const { currentTheme } = useTheme()
-
-  const handleScroll = () => {
-    const newScrollY = window.scrollY
-    setScrollY(newScrollY)
-    console.log(newScrollY)
-    const startScrollY = isDesktop ? 1600 : 10000
-
-    if (newScrollY > startScrollY) {
-      setAnimate(true)
-    } else {
-      setAnimate(false)
-    }
-  }
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll)
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
 
   return (
     <ConversationsSection
@@ -41,14 +17,10 @@ const Conversations = () => {
       theme={{ currentTheme }}
       BGVector={BGVector}
     >
-      <ConversationImageWrapper scrollY={scrollY} animate={animate}>
+      <ConversationImageWrapper>
         <img src={DesktopImage} alt='Desktop UX' />
       </ConversationImageWrapper>
-      <ConversationsTitles
-        theme={{ currentTheme }}
-        scrollY={scrollY}
-        animate={animate}
-      >
+      <ConversationsTitles theme={{ currentTheme }}>
         <h1>Gestiona la comunicación</h1>
         <h2>
           Zasbot ofrece su herramienta{' '}

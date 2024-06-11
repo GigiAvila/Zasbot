@@ -17,7 +17,7 @@ export const LANGUAGE_TEXT = 'Selecciona idioma'
 export const LANGUAGE_OPTIONS = ['Español', 'Inglés']
 
 export const FOOTER_COMPANY_EMAIL = 'info@zasbot.com'
-export const FOOTER_COMPANY_PHONE = '+34 636595002'
+export const FOOTER_COMPANY_PHONE = '+5491153317809'
 
 export const FOOTER_CONTACT_TITLE = 'Envíanos un mensaje!'
 export const FOOTER_CONTACT_TEXT =

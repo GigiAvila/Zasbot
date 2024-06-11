@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 
 export const WhatsappLogoWrapper = styled.div`
-  width: 3vw;
+  width: 5vw;
   height: auto;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 5px;
+  right: 5px;
   display: flex;
 
   > img {
@@ -14,7 +14,7 @@ export const WhatsappLogoWrapper = styled.div`
   }
 
   @media (max-width: 768px) {
-  width: 10vw;
-  bottom: 10px;
-  right: 10px;
+  width: 20vw;
+  bottom: -5px;
+  right: -8px;
 `

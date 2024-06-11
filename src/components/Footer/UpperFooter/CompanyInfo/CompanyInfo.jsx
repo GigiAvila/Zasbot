@@ -11,6 +11,7 @@ import {
   CompanyContactInformationContainer
 } from './CompanyInfo.Styles'
 import { useTheme } from '../../../../hooks/UseTheme'
+import SocialMedia from './SocialMedia/SocialMedia'
 
 const CompanyInfo = () => {
   const { currentTheme } = useTheme()
@@ -21,6 +22,7 @@ const CompanyInfo = () => {
         <CompanyTextFooter theme={{ currentTheme }}>
           {HOME_SLOGAN}
         </CompanyTextFooter>
+        <SocialMedia />
         <CompanyContactInformationContainer theme={{ currentTheme }}>
           <h1>{FOOTER_COMPANY_EMAIL}</h1>
           <h1>{FOOTER_COMPANY_PHONE}</h1>

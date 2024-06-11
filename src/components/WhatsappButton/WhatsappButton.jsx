@@ -10,13 +10,15 @@ const WhatsappButton = () => {
   }
   return (
     <>
-      <WhatsappLogoWrapper onClick={handleWhatsAppClick}>
+      <WhatsappLogoWrapper onClick={handleWhatsAppClick} id='whatsapp'>
         <img
           src={WhatsappLogo}
           alt='Whatsapp logo for virtual assitant or contact'
         />
       </WhatsappLogoWrapper>
-      <VirtualAssistant toggleAssistant={toggleAssistant} />
+      {toggleAssistant && (
+        <VirtualAssistant toggleAssistant={toggleAssistant} />
+      )}
     </>
   )
 }

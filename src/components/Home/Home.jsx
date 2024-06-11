@@ -17,7 +17,6 @@ import {
 } from '../../data/SpanishText'
 import HeroBG from './Assets/HeroBG.png'
 import ArrowImg from './Assets/Arrow.png'
-import WhatsappButton from '../WhatsappButton/WhatsappButton'
 import { useTheme } from '../../hooks/UseTheme'
 import HomeVideo from './Assets/HomeVideo.mp4'
 
@@ -61,7 +60,6 @@ const Home = () => {
         <HomeImgArticle theme={{ currentTheme }}>
           <video src={HomeVideo} autoPlay muted loop></video>
         </HomeImgArticle>
-        <WhatsappButton />
       </HeroWrapper>
     </HomeSection>
   )

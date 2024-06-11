@@ -99,14 +99,16 @@ export const MenuIconContainer = styled.div`
 export const LoginButton = styled.button`
   outline: none;
   border: none;
-  color: ${({ theme }) => theme.currentTheme['--text-400']};
-  background-color: ${({ theme }) => theme.currentTheme['--primary-100']};
   width: 5vw;
   height: 100%;
+  background-color: ${({ theme }) => theme.currentTheme['--primary-200']};
+  color: ${({ theme }) => theme.currentTheme['--bg-100']};
 
   &:hover {
-    background-color: ${({ theme }) => theme.currentTheme['--accent-200']};
-    color: ${({ theme }) => theme.currentTheme['--text-100']};
+    background-color: ${({ theme }) => theme.currentTheme['--accent-300']};
+    border-radius: 10px;
+    color: ${({ theme }) => theme.currentTheme['--bg-100']};
+    border: none;
   }
 
   @media (max-width: 768px) {

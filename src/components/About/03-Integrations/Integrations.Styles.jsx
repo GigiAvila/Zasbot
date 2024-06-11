@@ -20,7 +20,8 @@ const appearFromBelow = keyframes`
 `
 
 export const IntegrationsSection = styled.section`
-  height: 90vh;
+  height: auto;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
