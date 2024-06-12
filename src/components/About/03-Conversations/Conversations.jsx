@@ -21,8 +21,20 @@ const Conversations = () => {
         <img src={DesktopImage} alt='Desktop UX' />
       </ConversationImageWrapper>
       <ConversationsTitles theme={{ currentTheme }}>
-        <h1>Gestiona la comunicación</h1>
-        <h2>
+        <h1
+          data-scroll
+          data-scroll-direction='horizontal'
+          data-scroll-speed='1'
+          data-scroll-delay='1.5'
+        >
+          Gestiona la comunicación
+        </h1>
+        <h2
+          data-scroll
+          data-scroll-direction='horizontal'
+          data-scroll-speed='1'
+          data-scroll-delay='0.8'
+        >
           Zasbot ofrece su herramienta{' '}
           <SpanText theme={{ currentTheme }}>Live-Chat</SpanText> para que tu
           equipo pueda interactuar con tus clientes, centralizando todos los

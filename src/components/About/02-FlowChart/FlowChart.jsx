@@ -34,12 +34,29 @@ const FlowChart = () => {
     <FlowChartSection id='flowChart' theme={{ currentTheme }}>
       <FlowBG WorldImage={WorldImage} theme={{ currentTheme }}>
         <TextWrapper>
-          <QuoteLogoWrapper theme={{ currentTheme }}>
+          <QuoteLogoWrapper
+            theme={{ currentTheme }}
+            data-scroll
+            data-scroll-direction='horizontal'
+            data-scroll-speed='-2'
+          >
             <img src={QuoteImage} alt='Quote logo' />
           </QuoteLogoWrapper>
           <FlowChartTitles theme={{ currentTheme }}>
-            <h1>Diseña tus conversaciones</h1>
-            <h2>
+            <h1
+              data-scroll
+              data-scroll-direction='horizontal'
+              data-scroll-speed='-1'
+              data-scroll-delay='1.2'
+            >
+              Diseña tus conversaciones
+            </h1>
+            <h2
+              data-scroll
+              data-scroll-direction='horizontal'
+              data-scroll-speed='-1'
+              data-scroll-delay='0.8'
+            >
               Con nuestra herramienta{' '}
               <SpanText theme={{ currentTheme }}>No-Code</SpanText> puedes
               diseñar tus flujos conversacionales a medida, para mayor

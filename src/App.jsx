@@ -6,7 +6,7 @@ import Main from './components/Main/Main'
 import { AnimatePresence } from 'framer-motion'
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 import 'locomotive-scroll/dist/locomotive-scroll.css'
-import WhatsappButton from './components/WhatsappButton/WhatsappButton'
+// import WhatsappButton from './components/WhatsappButton/WhatsappButton'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 
 function App() {
@@ -40,7 +40,7 @@ function App() {
           </div>
         </AnimatePresence>
       </LocomotiveScrollProvider>
-      <WhatsappButton />
+      {/* <WhatsappButton /> */}
     </>
   )
 }

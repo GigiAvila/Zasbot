@@ -14,13 +14,20 @@ const Assessment = () => {
   return (
     <AssessmentSection id='assessment' theme={{ currentTheme }}>
       <AssesmentArticle theme={{ currentTheme }}>
-        <h1>¿Necesitas ayuda con tu proyecto?</h1>
-        <p>
+        <h1 data-scroll data-scroll-speed='1' data-scroll-delay='1.5'>
+          ¿Necesitas ayuda con tu proyecto?
+        </h1>
+        <p data-scroll data-scroll-speed='1' data-scroll-delay='0.8'>
           Nuestro equipo está preparado para relevar las necesidades de su
           negocio y diseñar las mejores soluciones. Realizamos proyectos
           especiales para cualquier tamaño de empresa
         </p>
-        <ContactButton theme={{ currentTheme }}>
+        <ContactButton
+          theme={{ currentTheme }}
+          data-scroll
+          data-scroll-speed='1'
+          data-scroll-delay='0.5'
+        >
           <Link to='/contact'>Contáctanos</Link>
         </ContactButton>
       </AssesmentArticle>
