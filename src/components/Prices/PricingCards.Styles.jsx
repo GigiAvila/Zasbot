@@ -15,7 +15,7 @@ export const PaymentOptionsWrapper = styled.div`
   }
 `
 
-export const PlanTitle = styled.h4`
+export const PlanTitle = styled.h3`
   font-size: 1.7vw;
   padding: 1vw 0;
   color: ${({ theme }) => theme.currentTheme['--text-100']};
@@ -76,7 +76,7 @@ export const PlanPriceContainer = styled.div`
   gap: 0.5vw;
 `
 
-export const PlanPrice = styled.h2`
+export const PlanPrice = styled.h5`
   font-size: 2vw;
   padding: 0.5vw 0;
   color: ${({ theme }) => theme.currentTheme['--primary-200']};

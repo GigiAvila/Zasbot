@@ -45,7 +45,7 @@ export const AssesmentArticle = styled.article`
     gap: 6vw;
   }
 
-  > h1 {
+  > h3 {
     background: radial-gradient(
       circle at center,
       ${({ theme }) => theme.currentTheme['--primary-100']},

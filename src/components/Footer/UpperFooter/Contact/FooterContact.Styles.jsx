@@ -19,7 +19,7 @@ export const ContactFooterContainer = styled.article`
 export const ContactFooterTextWrapper = styled.div`
   padding: 1vw;
 
-  > h1 {
+  > h3 {
     line-height: 2.5;
     font-weight: bold;
     font-size: 1vw;
@@ -29,7 +29,7 @@ export const ContactFooterTextWrapper = styled.div`
       font-size: 2vw;
     }
   }
-  > p {
+  > h4 {
     font-weight: 200;
     padding: 1vw 0;
     line-height: 2;

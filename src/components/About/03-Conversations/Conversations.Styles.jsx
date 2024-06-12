@@ -45,7 +45,7 @@ export const ConversationsTitles = styled.article`
   gap: 3vw;
   width: 50%;
 
-  > h1 {
+  > h3 {
     background: radial-gradient(
       circle at center,
       ${({ theme }) => theme.currentTheme['--primary-100']},
@@ -64,7 +64,7 @@ export const ConversationsTitles = styled.article`
     }
   }
 
-  > h2 {
+  > h4 {
     font-size: 1.7vw;
     font-weight: 300;
     color: ${({ theme }) => theme.currentTheme['--text-100']};

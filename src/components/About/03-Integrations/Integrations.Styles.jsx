@@ -41,7 +41,7 @@ export const IntegracionsTitles = styled.article`
   align-items: center;
   gap: 1vw;
 
-  > h1 {
+  > h3 {
     background: radial-gradient(
       circle at center,
       ${({ theme }) => theme.currentTheme['--primary-100']},
@@ -59,7 +59,7 @@ export const IntegracionsTitles = styled.article`
     }
   }
 
-  > h2 {
+  > h4 {
     font-size: 1.7vw;
     font-weight: 300;
     color: ${({ theme }) => theme.currentTheme['--text-100']};

@@ -43,15 +43,15 @@ const FlowChart = () => {
             <img src={QuoteImage} alt='Quote logo' />
           </QuoteLogoWrapper>
           <FlowChartTitles theme={{ currentTheme }}>
-            <h1
+            <h3
               data-scroll
               data-scroll-direction='horizontal'
               data-scroll-speed='-1'
               data-scroll-delay='1.2'
             >
               Diseña tus conversaciones
-            </h1>
-            <h2
+            </h3>
+            <h4
               data-scroll
               data-scroll-direction='horizontal'
               data-scroll-speed='-1'
@@ -61,12 +61,12 @@ const FlowChart = () => {
               <SpanText theme={{ currentTheme }}>No-Code</SpanText> puedes
               diseñar tus flujos conversacionales a medida, para mayor
               satisfacción de tus clientes
-            </h2>
+            </h4>
           </FlowChartTitles>
         </TextWrapper>
       </FlowBG>
       <FlowVideo variants={subContainer} initial='hidden' animate='reveal'>
-        <video src={FlowChartVideo} autoPlay loop muted></video>
+        <video src={FlowChartVideo} autoPlay loop muted loading='lazy'></video>
       </FlowVideo>
     </FlowChartSection>
   )

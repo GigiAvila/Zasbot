@@ -20,7 +20,7 @@ export const CompanyDataContainer = styled.div`
   gap: 0.6vw;
   width: 25vw;
 
-  > p {
+  > h4 {
     font-size: 0.8vw;
     color: white;
 
@@ -52,7 +52,7 @@ export const CompanyContactInformationContainer = styled.div`
   width: 100%;
   margin-top: 1vw;
 
-  > h1 {
+  > h3 {
     font-weight: 700;
     font-size: 1vw;
     letter-spacing: 0.07rem;

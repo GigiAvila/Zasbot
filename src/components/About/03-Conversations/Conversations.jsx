@@ -18,18 +18,18 @@ const Conversations = () => {
       BGVector={BGVector}
     >
       <ConversationImageWrapper>
-        <img src={DesktopImage} alt='Desktop UX' />
+        <img src={DesktopImage} alt='Desktop UX' loading='lazy' />
       </ConversationImageWrapper>
       <ConversationsTitles theme={{ currentTheme }}>
-        <h1
+        <h3
           data-scroll
           data-scroll-direction='horizontal'
           data-scroll-speed='1'
           data-scroll-delay='1.5'
         >
           Gestiona la comunicación
-        </h1>
-        <h2
+        </h3>
+        <h4
           data-scroll
           data-scroll-direction='horizontal'
           data-scroll-speed='1'
@@ -40,7 +40,7 @@ const Conversations = () => {
           equipo pueda interactuar con tus clientes, centralizando todos los
           canales de comunicación, con proceso{' '}
           <SpanText theme={{ currentTheme }}>Hand-Off</SpanText>
-        </h2>
+        </h4>
       </ConversationsTitles>
     </ConversationsSection>
   )

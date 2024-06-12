@@ -36,11 +36,6 @@ const Home = () => {
           </h1>
           <h2>{HOME_SLOGAN}</h2>
           <HomeForm theme={{ currentTheme }}>
-            {/* <HomeInput
-            type='email'
-            placeholder={HOME_INPUT_TEXT}
-            theme={{ currentTheme }}
-          /> */}
             <HomeButton theme={{ currentTheme }}>
               <HomeAnchor
                 href='https://app.zasbot.com/register'
@@ -58,7 +53,7 @@ const Home = () => {
           </HomeForm>
         </HomeTextArticle>
         <HomeImgArticle theme={{ currentTheme }}>
-          <video src={HomeVideo} autoPlay muted loop></video>
+          <video src={HomeVideo} autoPlay muted loop loading='lazy'></video>
         </HomeImgArticle>
       </HeroWrapper>
     </HomeSection>

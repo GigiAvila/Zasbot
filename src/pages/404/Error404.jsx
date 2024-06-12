@@ -8,7 +8,7 @@ const Error404 = () => {
   return (
     <ErrorSection theme={{ currentTheme }}>
       <ErrorArticle theme={{ currentTheme }}>
-        <img src={errorImg} alt='Error Image' />
+        <img src={errorImg} alt='Error Image' loading='lazy' />
       </ErrorArticle>
       <ErrorArticle theme={{ currentTheme }}>
         <h2>Error 404</h2>

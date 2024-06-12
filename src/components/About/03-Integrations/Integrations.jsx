@@ -47,12 +47,12 @@ const Integrations = () => {
     <IntegrationsSection id='integrations' theme={{ currentTheme }}>
       <IntegracionsTitles theme={{ currentTheme }}>
         {' '}
-        <h1 data-scroll data-scroll-speed='1' data-scroll-delay='1.5'>
+        <h3 data-scroll data-scroll-speed='1' data-scroll-delay='1.5'>
           Integraciones
-        </h1>
-        <h2 data-scroll data-scroll-speed='1' data-scroll-delay='0.8'>
+        </h3>
+        <h4 data-scroll data-scroll-speed='1' data-scroll-delay='0.8'>
           {INTEGRATION_TEXT}
-        </h2>
+        </h4>
       </IntegracionsTitles>
       <LogosArticle theme={{ currentTheme }}>
         {integrationImages.map((image, index) => (
