@@ -8,8 +8,8 @@ export const ToTopButton = styled.div`
   width: 2.8vw;
   height: 2.8vw;
   border-radius: 50%;
-  bottom: 1.5vw;
-  right: 70px;
+  bottom: 5.5em;
+  right: 2em;
   cursor: pointer;
   z-index: 1000;
 
