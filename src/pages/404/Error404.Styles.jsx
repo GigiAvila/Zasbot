@@ -34,6 +34,7 @@ export const ErrorArticle = styled.article`
   > img {
     width: auto;
     height: 70%;
+    filter: drop-shadow(0 0 20px rgba(0,0,0,0.9));
 
     @media (max-width: 768px) {
      width: 100%;

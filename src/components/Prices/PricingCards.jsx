@@ -143,7 +143,7 @@ export const PricingCards = () => {
           <PaymentOptionTitle>
             <PlanTitle theme={{ currentTheme }}>Business</PlanTitle>
             <PlanPriceContainer>
-              <PlanPrice theme={{ currentTheme }}>49 USD</PlanPrice>
+              <PlanPrice theme={{ currentTheme }}>99 USD</PlanPrice>
               <PriceFrequency theme={{ currentTheme }}>
                 / por mes
               </PriceFrequency>
@@ -173,7 +173,7 @@ export const PricingCards = () => {
           <PaymentOptionTitle>
             <PlanTitle theme={{ currentTheme }}>Business Plus</PlanTitle>
             <PlanPriceContainer>
-              <PlanPrice theme={{ currentTheme }}>149 USD</PlanPrice>
+              <PlanPrice theme={{ currentTheme }}>199 USD</PlanPrice>
               <PriceFrequency theme={{ currentTheme }}>
                 / por mes
               </PriceFrequency>

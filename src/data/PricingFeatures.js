@@ -21,7 +21,8 @@ export const FEATURES = {
     'Campañas y Difusiones',
     '1 bot',
     '5 usuarios',
-    '10.000 bot users'
+    '10.000 bot users',
+    'Incluye inteligencia artificial'
   ],
   enterprise: [
     'Funcionalidades Business Plus',
