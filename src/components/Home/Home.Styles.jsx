@@ -183,8 +183,9 @@ export const HomeButton = styled.button`
 
   @media (max-width: 768px) {
     width: 80vw;
-    height: 10vh;
+    height: 6vh;
     gap: 1vw;
+    padding: 0.6em;
   }
 `
 export const HomeAnchor = styled.a`
