@@ -12,6 +12,8 @@ const HomePage = lazy(() => import('./pages/HomePage.jsx'))
 const PricesPage = lazy(() => import('./pages/PricesPage.jsx'))
 const ContactPage = lazy(() => import('./pages/ContactPage.jsx'))
 const FaqsPage = lazy(() => import('./pages/FaqsPage.jsx'))
+const BlogPage = lazy(() => import('./pages/BlogPage.jsx'))
+const BlogPostPage = lazy(() => import('./pages/BlogPostPage.jsx'))
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -25,6 +27,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
               <Route path='/prices' element={<PricesPage />} />
               <Route path='/contact' element={<ContactPage />} />
               <Route path='/faqs' element={<FaqsPage />} />
+              <Route path='/blog' element={<BlogPage />} />
+              <Route path='/blog/:slug' element={<BlogPostPage />} />
               <Route path='*' element={<Error404 />} />
             </Route>
           </Routes>

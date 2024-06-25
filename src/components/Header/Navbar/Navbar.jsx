@@ -102,6 +102,11 @@ const Navbar = () => {
             FAQs
           </Link>
         </NavElement>
+        <NavElement onClick={toggleMenu} theme={{ currentTheme }}>
+          <Link to='/blog' onClick={handleScrollToTop}>
+            Blog
+          </Link>
+        </NavElement>
         <li>
           <LoginAnchor
             href='https://app.zasbot.com/login'
