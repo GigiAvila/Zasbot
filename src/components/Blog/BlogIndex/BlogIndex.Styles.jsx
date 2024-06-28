@@ -40,7 +40,12 @@ export const BlogTitles = styled.section`
   width: 80%;
 
   @media (max-width: 768px) {
-    width: 100%;
+    width: 90vw;
+
+    > * {
+      font-size: 10vw;
+      padding: 3vw 0;
+    }
   }
 
   > h1 {
@@ -68,6 +73,7 @@ export const PostContainer = styled.section`
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
+    width: 90vw;
   }
 `
 
@@ -77,12 +83,16 @@ export const Post = styled.article`
   justify-content: flex-start;
   align-items: flex-start;
   animation: ${appearFromBottom} 1.5s ease-in-out;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  background-color: ${({ theme }) => theme.currentTheme['--bg-200']};
 `
 
 export const ImgWrapper = styled.div`
   width: 100%;
   height: 280px;
   overflow: hidden;
+  border-radius: 8px 8px 0 0;
 
   > img {
     width: 100%;
@@ -103,7 +113,7 @@ export const Details = styled.div`
   align-items: flex-start;
   gap: 2vw;
   width: 100%;
-  padding-top: 1vw;
+  padding: 1vw;
 
   > * {
     color: ${({ theme }) => theme.currentTheme['--text-200']};
@@ -138,6 +148,7 @@ export const Button = styled.div`
   width: auto;
   background-color: ${({ theme }) => theme.currentTheme['--primary-200']};
   color: ${({ theme }) => theme.currentTheme['--bg-100']};
+  border-radius: 8px;
 
   &:hover {
     background-color: ${({ theme }) => theme.currentTheme['--accent-300']};

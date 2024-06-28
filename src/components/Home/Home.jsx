@@ -5,20 +5,24 @@ import {
   HomeSpan,
   // HomeInput,
   HomeAnchor,
-  HomeButton,
-  HomeButtonImgWrapper,
+  // HomeButton,
+  FreeTrialButton,
+  DemoButton,
+  ButtonLeft,
+  // HomeButtonImgWrapper,
   HeroWrapper,
-  HomeForm
+  CtaArticle
 } from './Home.Styles'
 import {
   HOME_SLOGAN,
-  HOME_BUTTON_TEXT
+  HOME_BUTTON_TEXT,
+  HOME_BUTTON_DEMO
   // HOME_INPUT_TEXT
 } from '../../data/SpanishText'
 import HeroBG from './Assets/HeroBG.png'
-import ArrowImg from './Assets/Arrow.png'
+// import ArrowImg from './Assets/Arrow.png'
 import { useTheme } from '../../hooks/UseTheme'
-import HomeVideo from './Assets/HomeVideo.mp4'
+// import HomeVideo from './Assets/HomeVideo.mp4'
 
 const Home = () => {
   const { currentTheme } = useTheme()
@@ -35,25 +39,44 @@ const Home = () => {
             </HomeSpan>{' '}
           </h1>
           <h2>{HOME_SLOGAN}</h2>
-          <HomeForm theme={{ currentTheme }}>
-            <HomeButton theme={{ currentTheme }}>
+          <CtaArticle>
+            <ButtonLeft theme={{ currentTheme }}>
+              <FreeTrialButton theme={{ currentTheme }}>
+                <HomeAnchor
+                  href='https://app.zasbot.com/register'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  {' '}
+                  {HOME_BUTTON_TEXT}
+                </HomeAnchor>
+                {/* <HomeButtonImgWrapper>
+                <img src={ArrowImg} alt='Send Icon' />
+              </HomeButtonImgWrapper> */}
+              </FreeTrialButton>
+              <p>* No requiere tarjeta de crédito</p>
+            </ButtonLeft>
+            <DemoButton theme={{ currentTheme }}>
               <HomeAnchor
-                href='https://app.zasbot.com/register'
+                href='https://calendly.com/nestor-zasbot'
                 target='_blank'
                 rel='noopener noreferrer'
               >
                 {' '}
-                <p>{HOME_BUTTON_TEXT}</p>
+                {HOME_BUTTON_DEMO}
               </HomeAnchor>
-              <HomeButtonImgWrapper>
+              {/* <HomeButtonImgWrapper>
                 <img src={ArrowImg} alt='Send Icon' />
-              </HomeButtonImgWrapper>
-            </HomeButton>
-            <p>* No requiere tarjeta de crédito</p>
-          </HomeForm>
+              </HomeButtonImgWrapper> */}
+            </DemoButton>
+          </CtaArticle>
         </HomeTextArticle>
         <HomeImgArticle theme={{ currentTheme }}>
-          <video src={HomeVideo} autoPlay muted loop loading='lazy'></video>
+          {/* <video src={HomeVideo} autoPlay muted loop loading='lazy'></video> */}
+          <img
+            src='https://res.cloudinary.com/dqdyvyknw/image/upload/v1719342554/ZASBOT_7_lxpwru.png'
+            alt='Zasbot Home logo'
+          />
         </HomeImgArticle>
       </HeroWrapper>
     </HomeSection>

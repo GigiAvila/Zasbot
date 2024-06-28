@@ -1,7 +1,7 @@
 import { FooterSection } from './Footer.Styles'
-import TermsConditionsAndPolicy from './LowerFooter/TermsConditionsAndPolicy'
 import UpperFooter from './UpperFooter/UpperFooter'
 import { useTheme } from '../../hooks/UseTheme'
+import { LowerFooter } from './LowerFooter/LowerFooter'
 
 const Footer = () => {
   const { currentTheme } = useTheme()
@@ -13,11 +13,11 @@ const Footer = () => {
         style={{
           width: '99%',
           height: '1px',
-          borderBottom: `1px solid ${currentTheme['--primary-100']}`
+          borderBottom: `1px solid ${currentTheme['--accent-400']}`
         }}
       ></div>
 
-      <TermsConditionsAndPolicy />
+      <LowerFooter />
     </FooterSection>
   )
 }

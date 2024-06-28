@@ -133,7 +133,7 @@ export const PricingCards = () => {
               theme={{ currentTheme }}
             >
               {' '}
-              Inicia tu prueba gratuita ahora
+              INICIA TU PRUEBA GRATUITA AHORA
             </PriceAnchor>
           </BuyButton>
         </PaymentOption>
@@ -164,7 +164,7 @@ export const PricingCards = () => {
               theme={{ currentTheme }}
             >
               {' '}
-              Inicia tu prueba gratuita ahora
+              INICIA TU PRUEBA GRATUITA AHORA
             </PriceAnchor>
           </BuyButton>
         </PaymentOption>
@@ -194,7 +194,7 @@ export const PricingCards = () => {
               theme={{ currentTheme }}
             >
               {' '}
-              Inicia tu prueba gratuita ahora
+              INICIA TU PRUEBA GRATUITA AHORA
             </PriceAnchor>
           </BuyButton>
         </PaymentOption>
@@ -215,7 +215,7 @@ export const PricingCards = () => {
           </FeaturesList>
           <BuyButton theme={{ currentTheme }}>
             <StyledLink to='/contact' theme={{ currentTheme }}>
-              Hablar con un asesor
+              HABLAR CON UN ASESOR
             </StyledLink>
           </BuyButton>
         </PaymentOption>

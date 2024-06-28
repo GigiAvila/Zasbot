@@ -5,7 +5,8 @@ export const HOME_SLOGAN =
   'Aumenta tus ingresos ofreciendo a tus clientes una atención 24/7 en todos los canales de comunicación'
 
 export const HOME_INPUT_TEXT = 'Ingresa tu correo'
-export const HOME_BUTTON_TEXT = '¡Inicia tu prueba gratuita de 14 días!'
+export const HOME_BUTTON_TEXT = 'INICIAR PRUEBA GRATUITA'
+export const HOME_BUTTON_DEMO = 'AGENDAR UNA DEMO'
 
 export const NAVBAR_PRODUCT = 'Producto'
 export const NAVBAR_CLIENTS = 'Clientes'
@@ -22,7 +23,7 @@ export const FOOTER_COMPANY_PHONE = '+5491153317809'
 export const FOOTER_CONTACT_TITLE = 'Envíanos un mensaje!'
 export const FOOTER_CONTACT_TEXT =
   'Necesitas ayuda o quieres saber más? Estamos siempre a un solo correo de distancia! '
-export const FOOTER_CONTACT_BUTTON_TEXT = 'Contáctanos'
+export const FOOTER_CONTACT_BUTTON_TEXT = 'CONTACTANOS'
 
 export const FOOTER_TERMS_TEXT = 'Términos & Condiciones'
 export const FOOTER_PRIVACY_TEXT = 'Política de privacidad'
@@ -38,11 +39,11 @@ export const CONTACT_TEXT_LABEL = 'Escribe tu consulta'
 export const CONTACT_POLICY_LABEL = 'He leído y acepto la'
 export const CONTACT_POLICY_SPAN = 'política de privacidad'
 export const CONTACT_OPTIONAL_SPAN = 'Opcional'
-export const CONTACT_BUTTON_TEXT = 'Enviar'
+export const CONTACT_BUTTON_TEXT = 'ENVIAR'
 
 export const WHATSAPP_TITLE = 'Asistente Virtual'
 export const WHATSAPP_TEXT = 'Escribe lo que necesites'
-export const WHATSAPP_BUTTON_TEXT = 'Enviar'
+export const WHATSAPP_BUTTON_TEXT = 'ENVIAR'
 
 export const INTEGRATION_TEXT =
   'Nos integramos a las mejores aplicaciones del mercado para que puedas potenciar tu negocio'

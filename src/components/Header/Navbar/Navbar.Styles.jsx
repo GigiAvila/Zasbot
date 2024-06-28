@@ -59,7 +59,9 @@ export const NavElement = styled.li`
     height: 0;
     background-color: ${({ theme }) => theme.currentTheme['--accent-400']};
     transform: translate(-50%, -50%);
-    transition: width 0.6s, height 0.1s;
+    transition:
+      width 0.6s,
+      height 0.1s;
     z-index: -1;
     border-radius: 20px;
   }
@@ -89,7 +91,7 @@ export const MenuIconContainer = styled.div`
     width: 100%;
     height: auto;
     display: none;
-    filter: invert(100%);
+    filter: ${({ theme }) => theme.currentTheme['--filter']};
     @media (max-width: 768px) {
       display: inline-flex;
     }
@@ -99,10 +101,11 @@ export const MenuIconContainer = styled.div`
 export const LoginButton = styled.button`
   outline: none;
   border: none;
-  width: 5vw;
   height: 100%;
   background-color: ${({ theme }) => theme.currentTheme['--primary-200']};
   color: ${({ theme }) => theme.currentTheme['--bg-100']};
+  font-size: 0.8em;
+  font-weight: 400;
 
   &:hover {
     background-color: ${({ theme }) => theme.currentTheme['--accent-300']};
@@ -122,11 +125,9 @@ export const LoginButton = styled.button`
 export const LoginAnchor = styled.a`
   text-decoration: none;
   font-size: 0.9vw;
-  color: black;
 
   &:hover {
     text-decoration: none;
-    color: black;
   }
 
   @media (max-width: 768px) {

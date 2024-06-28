@@ -5,9 +5,8 @@ export const SiteMapSection = styled.article`
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  gap: 5vw;
+  gap: 3vw;
   width: auto;
-  padding-right: 2vw;
 
   @media (max-width: 768px) {
     width: 100vw;

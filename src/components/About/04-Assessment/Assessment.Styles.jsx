@@ -38,6 +38,7 @@ export const AssesmentArticle = styled.article`
   gap: 3vw;
   border-radius: 8px;
   border: 3px solid ${({ theme }) => theme.currentTheme['--accent-400']};
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
   animation: ${(props) => (props.animate ? fadeIn : 'none')} 3s ease-in-out;
 
   @media (max-width: 768px) {
@@ -46,9 +47,8 @@ export const AssesmentArticle = styled.article`
   }
 
   > h3 {
-    background: radial-gradient(
-      circle at center,
-      ${({ theme }) => theme.currentTheme['--primary-100']},
+    background: linear-gradient(
+      ${({ theme }) => theme.currentTheme['--primary-300']},
       ${({ theme }) => theme.currentTheme['--primary-200']}
     );
     -webkit-background-clip: text;
@@ -81,13 +81,19 @@ export const ContactButton = styled.button`
   background-color: transparent;
   outline: none;
   border: none;
-  color: ${({ theme }) => theme.currentTheme['--text-400']};
-  background-color: ${({ theme }) => theme.currentTheme['--accent-400']};
-  width: 10vw;
+  width: 12vw;
   height: 6vh;
   align-self: center;
   border-radius: 8px;
   animation: ${(props) => (props.animate ? fadeIn : 'none')} 2.6s ease-in-out;
+  background-color: ${({ theme }) => theme.currentTheme['--primary-200']};
+
+  &:hover {
+    background-color: ${({ theme }) => theme.currentTheme['--accent-300']};
+    border-radius: 10px;
+
+    border: none;
+  }
 
   @media (max-width: 768px) {
     padding: 2vw;
@@ -98,12 +104,12 @@ export const ContactButton = styled.button`
     text-decoration: none;
     font-size: 1.2vw;
     font-weight: 400;
-    color: black;
+    color: ${({ theme }) => theme.currentTheme['--bg-100']};
   }
 
   > *:hover {
     text-decoration: none;
-    color: black;
+    color: ${({ theme }) => theme.currentTheme['--bg-100']};
   }
 
   > * {

@@ -5,8 +5,8 @@ export const ConditionsContainer = styled.section`
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
-  width: 100%;
-  padding: 1vw 1vw;
+  width: auto;
+  padding: 1vw 0vw;
 `
 
 export const TermsWrapper = styled.div`
@@ -33,7 +33,7 @@ export const TermsConditionsAndPolicyText = styled.a`
   }
 
   @media (max-width: 768px) {
-    font-size: 2.5vw;
+    font-size: 2.3vw;
     letter-spacing: 0.02rem;
     padding: 1vw 0;
   }

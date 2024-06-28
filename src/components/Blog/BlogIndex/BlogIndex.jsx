@@ -68,6 +68,7 @@ const BlogIndex = () => {
           <Post
             key={post._id}
             onClick={() => handlePostClick(post.slug.current)}
+            theme={{ currentTheme }}
           >
             <ImgWrapper>
               <img

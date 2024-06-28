@@ -27,7 +27,7 @@ export const FlowChartSection = styled.section`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: ${({ theme }) => theme.currentTheme['--bg-100']};
+
   gap: 2vw;
   padding: 2vw;
 
@@ -105,9 +105,8 @@ export const FlowChartTitles = styled.article`
   }
 
   > h3 {
-    background: radial-gradient(
-      circle at center,
-      ${({ theme }) => theme.currentTheme['--primary-100']},
+    background: linear-gradient(
+      ${({ theme }) => theme.currentTheme['--primary-300']},
       ${({ theme }) => theme.currentTheme['--primary-200']}
     );
     -webkit-background-clip: text;

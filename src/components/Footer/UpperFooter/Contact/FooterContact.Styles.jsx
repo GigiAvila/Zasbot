@@ -7,9 +7,8 @@ export const ContactFooterContainer = styled.article`
   justify-content: space-evenly;
   width: 18vw;
   border-radius: 10px;
-  background-color: ${({ theme }) => theme.currentTheme['--bg-300']};
+  background-color: ${({ theme }) => theme.currentTheme['--bg-200']};
   padding: 0.5vw;
-  margin-right: 1vw;
 
   @media (max-width: 768px) {
     display: none;
@@ -46,23 +45,25 @@ export const ContactButton = styled.button`
   justify-content: center;
   align-items: center;
   gap: 0.3vw;
-  background-color: ${({ theme }) => theme.currentTheme['--accent-400']};
   height: 5vh;
   outline: none;
   border: none;
   cursor: pointer;
+  background-color: ${({ theme }) => theme.currentTheme['--primary-200']};
 
   > * {
-    font-size: 0.8vw;
+    font-size: 0.8em;
+    font-weight: 400;
     height: 100%;
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: ${({ theme }) => theme.currentTheme['--text-400']};
+    color: ${({ theme }) => theme.currentTheme['--bg-100']};
+  }
 
-    &:hover {
-      text-decoration: none;
-      color: ${({ theme }) => theme.currentTheme['--text-400']};
-    }
+  &:hover {
+    background-color: ${({ theme }) => theme.currentTheme['--accent-300']};
+    border-radius: 10px;
+    color: ${({ theme }) => theme.currentTheme['--bg-100']};
   }
 `

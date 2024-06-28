@@ -19,9 +19,8 @@ export const VideoTitles = styled.article`
   gap: 1vw;
 
   > h3 {
-    background: radial-gradient(
-      circle at center,
-      ${({ theme }) => theme.currentTheme['--primary-100']},
+    background: linear-gradient(
+      ${({ theme }) => theme.currentTheme['--primary-300']},
       ${({ theme }) => theme.currentTheme['--primary-200']}
     );
     -webkit-background-clip: text;

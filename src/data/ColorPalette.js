@@ -1,37 +1,49 @@
-// #031521 (Bg)
-// #FFF63B (primary)
-// #EF5522 (naranja -accent)
-// #43345B (violeta)
-// #DCB903 (mostaza - secondary)
-
 export const darkPalette = {
-  '--primary-100': '#FFF63B', // amarillo
-  '--primary-200': '#DCB903', // mostaza
-  '--accent-200': '#43345B',
-  '--accent-300': '#FFF63B', // amarillo
-  '--accent-400': '#FFF63B', // amarillo
-  '--text-100': '#ffffff', // blanco
-  '--text-200': '#dcdcdc', // menos blanco
-  '--text-300': '#2d2d2d', // gris oscuro
-  '--text-400': '#031521', // negro
-  '--bg-100': '#031521', // negro
-  '--bg-200': '#2d2d2d', // gris oscuro
-  '--bg-300': '#454545' // gris intermedio
+  '--primary-100': '#FFF63B',
+  '--primary-200': '#DCB903',
+  '--primary-300': '#FFF63B',
+  '--accent-200': '#FFF63B',
+  '--accent-300': '#FFF63B',
+  '--accent-400': '#FFF63B',
+  '--text-100': '#ffffff',
+  '--text-200': '#dcdcdc',
+  '--text-300': '#ffffff',
+  '--text-400': '#031521',
+  '--text-500': '#ffffff',
+  '--bg-100': '#031521',
+  '--bg-200': 'rgba(23, 41, 53, 0.5)',
+  '--bg-300': '#031521',
+  '--filter': 'invert(100%)',
+  '--gradient-start': '#031521',
+  '--gradient-end': '#43345B',
+  '--companyImage':
+    'url(https://res.cloudinary.com/dqdyvyknw/image/upload/v1719331528/logo-amarillo_1_f9r3nu.png)',
+  '--mode': 'dark',
+  '--blend-mode': 'overlay'
 }
 
 export const lightPalette = {
-  '--primary-100': '#2d2d2d', // gris casi negro
-  '--primary-200': '#454545', // gris oscuro
-  '--accent-100': '#2d2d2d', // gris casi negro
-  '--accent-300': '#917800', // negro
-  '--accent-400': '#FFF63B', // amarillo
-  '--text-100': '#2d2d2d', // gris casi negro
-  '--text-200': '#454545', // gris oscuro
-  '--text-300': '#ffffff', // blanco
-  '--text-400': '#2d2d2d', // negro
-  '--bg-100': '#FFFFFF', // blanco
-  '--bg-200': '#2d2d2d',
-  '--bg-300': '#ffffff'
+  '--primary-100': '#43345B',
+  '--primary-200': '#DCB903',
+  '--primary-300': '#EF5522',
+  '--accent-100': '#2d2d2d',
+  '--accent-200': '#DCB903',
+  '--accent-300': '#031521',
+  '--accent-400': '#F5F5F7',
+  '--text-100': '#43345B',
+  '--text-200': '#031521', //
+  '--text-300': '#ffffff',
+  '--text-400': '#2d2d2d',
+  '--text-500': '#43345B', //
+  '--bg-100': '#FFFFFF',
+  '--bg-200': '#F5F5F7', // apple bg
+  '--bg-300': '#ffffff',
+  '--filter': 'invert(0%)',
+  '--gradient-start': '#ffffff',
+  '--gradient-mid': '#FFF63B',
+  '--gradient-end': '#DCB903',
+  '--companyImage':
+    'url(https://res.cloudinary.com/dqdyvyknw/image/upload/v1719331528/logo-azul_q4ffao.png)',
+  '--mode': 'light',
+  '--blend-mode': 'multiply'
 }
-
-//

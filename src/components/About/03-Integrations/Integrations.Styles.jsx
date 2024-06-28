@@ -42,9 +42,8 @@ export const IntegracionsTitles = styled.article`
   gap: 1vw;
 
   > h3 {
-    background: radial-gradient(
-      circle at center,
-      ${({ theme }) => theme.currentTheme['--primary-100']},
+    background: linear-gradient(
+      ${({ theme }) => theme.currentTheme['--primary-300']},
       ${({ theme }) => theme.currentTheme['--primary-200']}
     );
     -webkit-background-clip: text;
@@ -112,7 +111,7 @@ export const LogoBg = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: ${({ theme }) => theme.currentTheme['--bg-300']};
+    background-color: ${({ theme }) => theme.currentTheme['--bg-200']};
     opacity: 0.3;
     border-radius: 8px;
     z-index: -1;
