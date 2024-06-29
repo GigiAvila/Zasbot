@@ -44,31 +44,32 @@ const Integrations = () => {
   ]
 
   return (
-    <IntegrationsSection id='integrations' theme={{ currentTheme }}>
-      <IntegracionsTitles theme={{ currentTheme }}>
-        {' '}
-        <h3 data-scroll data-scroll-speed='1' data-scroll-delay='1.5'>
-          Integraciones
-        </h3>
-        <h4 data-scroll data-scroll-speed='1' data-scroll-delay='0.8'>
-          {INTEGRATION_TEXT}
-        </h4>
-      </IntegracionsTitles>
-      <LogosArticle theme={{ currentTheme }}>
-        {integrationImages.map((image, index) => (
-          <LogoBg
-            key={index}
-            theme={{ currentTheme }}
-            data-scroll
-            data-scroll-speed={(index + 1) * 0.1}
-          >
-            <LogoWrapper theme={{ currentTheme }}>
-              <LogoImage src={image} alt={`Integration Logo ${index + 1}`} />
-            </LogoWrapper>
-          </LogoBg>
-        ))}
-      </LogosArticle>
-    </IntegrationsSection>
+    <>
+      <IntegrationsSection id='integrations' theme={{ currentTheme }}>
+        <IntegracionsTitles theme={{ currentTheme }}>
+          {' '}
+          <h3 >
+            Integraciones
+          </h3>
+          <h4 >
+            {INTEGRATION_TEXT}
+          </h4>
+        </IntegracionsTitles>
+        <LogosArticle theme={{ currentTheme }}>
+          {integrationImages.map((image, index) => (
+            <LogoBg
+              key={index}
+              theme={{ currentTheme }}
+              
+            >
+              <LogoWrapper theme={{ currentTheme }}>
+                <LogoImage src={image} alt={`Integration Logo ${index + 1}`} />
+              </LogoWrapper>
+            </LogoBg>
+          ))}
+        </LogosArticle>
+      </IntegrationsSection>
+    </>
   )
 }
 

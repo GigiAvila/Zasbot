@@ -21,6 +21,15 @@ body {
   overflow-x: hidden;
 }
 
+body::after {
+  background-image: url(https://res.cloudinary.com/dqdyvyknw/image/upload/v1719590978/Desktop_-_1_tv1kwo.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-attachment: fixed;
+  background-color: red;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -38,17 +47,4 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }

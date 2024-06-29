@@ -10,14 +10,14 @@ export const ModalPopover = styled.div`
 `
 
 export const ModalContainer = styled.div`
-  width: 50vw;
-  height: 65vh;
+  width: 60vw;
+  height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   border-radius: 15px;
-  background-color: #2d2d2d;
+  background-color: ${({ theme }) => theme.currentTheme['--bg-200']};
   position: relative;
 
   @media (max-width: 768px) {
@@ -28,7 +28,7 @@ export const ModalContainer = styled.div`
 
 export const ModalTitle = styled.h1`
   padding: 1vw;
-  color: #ffd700;
+  color: ${({ theme }) => theme.currentTheme['--primary-200']};
   font-size: 2.5vw;
 
   @media (max-width: 768px) {
@@ -40,7 +40,7 @@ export const ModalTitle = styled.h1`
 
 export const ModalSubtitle = styled.div`
   padding: 1vw;
-  color: white;
+  color: ${({ theme }) => theme.currentTheme['--text-100']};
   font-size: 1.5vw;
 
   @media (max-width: 768px) {
@@ -66,7 +66,7 @@ export const CloseButtonContainer = styled.div`
   > img {
     width: 100%;
     height: auto;
-    filter: invert(100%);
+    filter: ${({ theme }) => theme.currentTheme['--filter']};
   }
 `
 
@@ -99,7 +99,7 @@ export const CompanyInfoWrapper = styled.div`
   > h3 {
     font-weight: 300;
     font-size: 1vw;
-    color: white;
+    color: ${({ theme }) => theme.currentTheme['--text-100']};
     text-align: start;
 
     @media (max-width: 768px) {
@@ -136,7 +136,7 @@ export const InfotextContainer = styled.div`
     font-weight: 700;
     font-size: 1vw;
     letter-spacing: 0.07rem;
-    color: #ffd700;
+    color: ${({ theme }) => theme.currentTheme['--primary-200']};
 
     @media (max-width: 768px) {
       font-size: 3.5vw;
@@ -146,5 +146,23 @@ export const InfotextContainer = styled.div`
 
   @media (max-width: 768px) {
     padding: 2vw;
+  }
+`
+
+export const ZasbotImage = styled.div`
+  width: 30vw;
+  height: auto;
+  object-fit: cover;
+  display: flex;
+  position: absolute;
+  top: 10vh;
+
+  > img {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
   }
 `

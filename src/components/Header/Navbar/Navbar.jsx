@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-// import ColorModeToggle from './ColorMode/ColorModeToggle'
+// import ColorModeToggle from './ColorMode/ColorModeToggle.jsx'
 // import Language from './Language/Language'
 import {
   NAVBAR_PRODUCT,
@@ -50,7 +50,7 @@ const Navbar = () => {
   return (
     <Nav>
       {menuOpen ? (
-        <MenuIconContainer>
+        <MenuIconContainer theme={{ currentTheme }}>
           <img
             src={CloseMenuIcon}
             alt='Close Menu Icon'
@@ -59,7 +59,7 @@ const Navbar = () => {
           />
         </MenuIconContainer>
       ) : (
-        <MenuIconContainer>
+        <MenuIconContainer theme={{ currentTheme }}>
           <img
             src={MenuIcon}
             alt='Open Menu Icon'
@@ -102,6 +102,11 @@ const Navbar = () => {
             FAQs
           </Link>
         </NavElement>
+        {/* <NavElement onClick={toggleMenu} theme={{ currentTheme }}>
+          <Link to='/blog' onClick={handleScrollToTop}>
+            Blog
+          </Link>
+        </NavElement> */}
         <li>
           <LoginAnchor
             href='https://app.zasbot.com/login'

@@ -1,14 +1,16 @@
 import CompanyInfo from './CompanyInfo/CompanyInfo'
 import FooterContact from './Contact/FooterContact'
 import SiteMap from './SiteMap/SiteMap'
-import { UpperFooterContainer } from './UpperFooter.Styles'
+import { UpperFooterContainer, UpperFooterWrapper } from './UpperFooter.Styles'
 
 const UpperFooter = () => {
   return (
     <UpperFooterContainer>
-      <CompanyInfo />
-      <SiteMap />
-      <FooterContact />
+      <UpperFooterWrapper>
+        <CompanyInfo />
+        <SiteMap />
+        <FooterContact />
+      </UpperFooterWrapper>
     </UpperFooterContainer>
   )
 }

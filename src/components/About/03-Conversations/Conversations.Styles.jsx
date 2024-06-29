@@ -31,6 +31,7 @@ export const ConversationsSection = styled.section`
   background-image: url(${(props) => props.BGVector});
   background-size: cover;
   padding: 2vw;
+  gap: 5vw;
 
   @media (max-width: 768px) {
     width: 100vw;
@@ -46,9 +47,8 @@ export const ConversationsTitles = styled.article`
   width: 50%;
 
   > h3 {
-    background: radial-gradient(
-      circle at center,
-      ${({ theme }) => theme.currentTheme['--primary-100']},
+    background: linear-gradient(
+      ${({ theme }) => theme.currentTheme['--primary-300']},
       ${({ theme }) => theme.currentTheme['--primary-200']}
     );
     -webkit-background-clip: text;
@@ -83,7 +83,7 @@ export const ConversationsTitles = styled.article`
   }
 `
 export const ConversationImageWrapper = styled.div`
-  width: 50%;
+  width: 40%;
   height: auto;
   display: flex;
   animation: ${(props) => (props.animate ? fadeIn : 'none')} 3s ease-in-out;
@@ -91,6 +91,7 @@ export const ConversationImageWrapper = styled.div`
   > img {
     width: 100%;
     height: auto;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.9));
   }
 
   @media (max-width: 768px) {

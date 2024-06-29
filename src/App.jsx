@@ -6,6 +6,8 @@ import Main from './components/Main/Main'
 import { AnimatePresence } from 'framer-motion'
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 import 'locomotive-scroll/dist/locomotive-scroll.css'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 // import WhatsappButton from './components/WhatsappButton/WhatsappButton'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 
@@ -36,7 +38,7 @@ function App() {
           >
             <Main />
             <Footer />
-            <ScrollToTop />
+            {/* <ScrollToTop /> */}
           </div>
         </AnimatePresence>
       </LocomotiveScrollProvider>

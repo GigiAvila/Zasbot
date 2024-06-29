@@ -28,7 +28,7 @@ export const PlanTitle = styled.h3`
 export const Tag = styled.h6`
   width: 4vw;
   height: 3vh;
-  background-color: ${({ theme }) => theme.currentTheme['--primary-100']};
+  background-color: ${({ theme }) => theme.currentTheme['--primary-200']};
   border-radius: 15px;
   font-size: 0.8vw;
   position: absolute;
@@ -173,8 +173,8 @@ export const BuyButton = styled.button`
   box-sizing: border-box;
   cursor: pointer;
   display: inline-block;
-  font-size: 0.8vw;
-  font-weight: 700;
+  font-size: 0.8em;
+  font-weight: 400;
   margin: 0;
   outline: none;
   overflow: hidden;
@@ -231,7 +231,6 @@ export const PricingSale = styled(Link)`
 
 export const PaymentOption = styled.div`
   border-radius: 15px;
-  border: 1px solid white;
   height: 80vh;
   width: 20vw;
   display: flex;
@@ -242,6 +241,8 @@ export const PaymentOption = styled.div`
   position: relative;
   -webkit-animation: jello-vertical 0.9s both;
   animation: jello-vertical 0.9s both;
+  background-color: ${({ theme }) => theme.currentTheme['--bg-200']};
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
 
   @-webkit-keyframes jello-vertical {
     0% {
@@ -315,7 +316,7 @@ export const PaymentOption = styled.div`
 
   &:hover ${Tag} {
     background-color: ${({ theme }) => theme.currentTheme['--text-400']};
-    color: ${({ theme }) => theme.currentTheme['--text-100']};
+     color: ${({ theme }) => theme.currentTheme['--text-300']};
   }
 
     &:hover ${PlanTitle} {
@@ -336,15 +337,15 @@ export const PaymentOption = styled.div`
 
     &:hover ${BuyButton} {
       background-color: ${({ theme }) => theme.currentTheme['--text-400']};
-      color: ${({ theme }) => theme.currentTheme['--text-100']};
+      color: ${({ theme }) => theme.currentTheme['--text-300']};
     }
 
     &:hover ${PriceAnchor} {
-      color: ${({ theme }) => theme.currentTheme['--text-100']};
+      color: ${({ theme }) => theme.currentTheme['--text-300']};
     }
 
     &:hover ${StyledLink} {
-      color: ${({ theme }) => theme.currentTheme['--text-100']};
+      color: ${({ theme }) => theme.currentTheme['--text-300']};
     }
 
     &:hover ${PricingSale} {
@@ -373,7 +374,8 @@ export const PaymentOption = styled.div`
 `
 
 export const StyledText = styled.p`
-  font-size: 0.7vw;
+  font-size: 0.8em;
+  font-weight: 400;
   position: absolute;
   bottom: 0;
   padding: 0.5vw;

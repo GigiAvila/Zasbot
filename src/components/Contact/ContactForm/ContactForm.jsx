@@ -9,7 +9,7 @@ import {
   OptionalText,
   TextArea,
   SubmitButton,
-  ThundersBG,
+  ContactImage,
   CustomCheckbox,
   HiddenCheckbox,
   StyledCheckbox,
@@ -63,12 +63,6 @@ const ContactForm = () => {
   return (
     <>
       <FormWrapper theme={{ currentTheme }}>
-        <ThundersBG>
-          <img
-            src='https://res.cloudinary.com/dqdyvyknw/image/upload/v1714386729/thunders_yt9bpt.png'
-            alt='Thunder Background Image'
-          />
-        </ThundersBG>
         <Form onSubmit={handleSubmit(onSubmit)} theme={{ currentTheme }}>
           <Label htmlFor='name' theme={{ currentTheme }}>
             {CONTACT_NAME_LABEL} <span>*</span>
@@ -170,6 +164,12 @@ const ContactForm = () => {
             {CONTACT_BUTTON_TEXT}
           </SubmitButton>
         </Form>
+        <ContactImage>
+          <img
+            src='https://res.cloudinary.com/dqdyvyknw/image/upload/v1719331538/ZASBOT_9_vfizwb.png'
+            alt='Image of a sitting robot for contact section'
+          />
+        </ContactImage>
       </FormWrapper>
       {isOpen && <Modal isOpen={isOpen} setIsOpen={setIsOpen} />}
     </>

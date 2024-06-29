@@ -30,6 +30,6 @@ export const Link = styled.a`
   > img {
     width: 100%;
     height: auto;
-    filter: brightness(0) invert(1);
+    filter: ${({ theme }) => theme.currentTheme['--filter']};
   }
 `

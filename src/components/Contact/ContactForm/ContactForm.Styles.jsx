@@ -1,13 +1,23 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`
 
 export const FormWrapper = styled.article`
   width: 70vw;
   height: 70vh;
   display: flex;
   justify-content: flex-end;
-  background-color: ${({ theme }) => theme.currentTheme['--bg-300']};
+  background-color: ${({ theme }) => theme.currentTheme['--bg-200']};
   border-radius: 8px;
-  box-shadow: 1px 1px 50px 4px rgba(0, 0, 0, 0.82);
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 5vw;
 
   @media (max-width: 768px) {
     width: 90vw;
@@ -22,8 +32,6 @@ export const Form = styled.form`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-color: ${({ theme }) => theme.currentTheme['--bg-300']};
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 
   @media (max-width: 768px) {
@@ -123,36 +131,43 @@ export const OptionalText = styled.span`
 
 export const SubmitButton = styled.button`
   padding: 0.5vw 1vw;
-  background-color: ${({ theme }) => theme.currentTheme['--primary-100']};
-  color: ${({ theme }) => theme.currentTheme['--text-300']};
   border: none;
-  font-size: 0.9em;
+  font-size: 0.8em;
+  font-weight: 400;
   cursor: pointer;
   transition: background-color 0.3s;
   align-self: flex-end;
   margin-right: 1vw;
+  width: 5vw;
+  background-color: ${({ theme }) => theme.currentTheme['--primary-200']};
+  color: ${({ theme }) => theme.currentTheme['--bg-100']};
 
   &:hover {
-    background-color: ${({ theme }) => theme.currentTheme['--accent-200']};
-    color: ${({ theme }) => theme.currentTheme['--text-100']};
+    background-color: ${({ theme }) => theme.currentTheme['--accent-300']};
+    border-radius: 10px;
+    color: ${({ theme }) => theme.currentTheme['--bg-100']};
+    border: none;
   }
 
   @media (max-width: 768px) {
     padding: 3vw;
+    width: 20vw;
   }
 `
 
-export const ThundersBG = styled.div`
-  width: 35vw;
+export const ContactImage = styled.div`
+  width: 30vw;
   height: 70vh;
   overflow: hidden;
   position: relative;
 
   > img {
     width: 100%;
-    height: 105%;
+    height: 120%;
     border-radius: 8px;
     object-fit: cover;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.9));
+    animation: ${fadeIn} 0.6s ease-in-out;
   }
 
   @media (max-width: 768px) {
@@ -190,18 +205,18 @@ export const StyledCheckbox = styled.div`
   height: 25px;
   position: relative;
   border: 2px solid ${({ theme }) => theme.currentTheme['--primary-200']};
-  background-color: ${({ theme }) => theme.currentTheme['--bg-300']};
+  background-color: ${({ theme }) => theme.currentTheme['--bg-200']};
   transition: background-color 0.3s;
 
   ${HiddenCheckbox}:checked + & {
-    background-color: ${({ theme }) => theme.currentTheme['--accent-400']};
+    background-color: ${({ theme }) => theme.currentTheme['--primary-200']};
   }
 
   &:after {
     content: '';
     width: 8px;
     height: 14px;
-    border: solid ${({ theme }) => theme.currentTheme['--text-400']};
+    border: solid ${({ theme }) => theme.currentTheme['--bg-200']};
     border-width: 0 3px 3px 0;
     transform: rotate(35deg);
     position: absolute;

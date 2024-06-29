@@ -1,12 +1,17 @@
 import { Link } from 'react-router-dom'
-import CompanyLogo from './Assets/logo.png'
 import { CompanyLogoWrapper } from './CompanyName.Styles'
+import { useTheme } from '../../../hooks/UseTheme'
 
 const CompanyName = () => {
+  const { currentTheme } = useTheme()
+
   return (
     <Link to='/home'>
       <CompanyLogoWrapper>
-        <img src={CompanyLogo} alt='Zasbot company Logo' />
+        <img
+          src={currentTheme['--companyImage'].slice(4, -1)}
+          alt='Zasbot company Logo'
+        />
       </CompanyLogoWrapper>
     </Link>
   )
