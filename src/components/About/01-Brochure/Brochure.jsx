@@ -9,17 +9,19 @@ import {
 const Brochure = () => {
   const { currentTheme } = useTheme()
 
-  const viewBrochure = () => {
-    window.open('https://www.zasbot.com/api/brochure/view-brochure', '_blank')
-  }
-
   return (
     <BrochureSection theme={{ currentTheme }}>
       <DownloadClipPath theme={{ currentTheme }}> </DownloadClipPath>
       <DownloadWrapper theme={{ currentTheme }}>
         <p>Conoce más sobre nuestros servicios</p>
         <BrochureButton theme={{ currentTheme }}>
-          <a onClick={viewBrochure}>DESCARGAR BROCHURE</a>
+          <a
+            href='https://zasbot-back-alpha.vercel.app/api/brochure/view-brochure'
+            target='_blank'
+            rel='noreferrer'
+          >
+            DESCARGAR BROCHURE
+          </a>
         </BrochureButton>
       </DownloadWrapper>
     </BrochureSection>

@@ -59,7 +59,7 @@ const Modal = ({ isOpen, setIsOpen }) => {
                   </CompanyInfoWrapper>
                   <InfotextContainer theme={{ currentTheme }}>
                     <h4>info@zasbot.com</h4>
-                    <h4>+34 636595002</h4>
+                    <h4>+54 911 53317809</h4>
                   </InfotextContainer>
                 </ModalContactFooter>
               </ModalContainer>

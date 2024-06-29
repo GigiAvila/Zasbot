@@ -266,6 +266,7 @@ export const PromoText = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 
     > span:first-of-type {
       font-weight: bold;
@@ -277,9 +278,11 @@ export const PromoText = styled.div`
     > span:last-of-type {
       font-weight: 300;
       letter-spacing: 0.1rem;
+      text-align: center;
 
       @media (max-width: 768px) {
         font-size: 4vw;
+        text-align: center;
       }
     }
   }
