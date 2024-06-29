@@ -19,7 +19,7 @@ export const darkPalette = {
   '--companyImage':
     'url(https://res.cloudinary.com/dqdyvyknw/image/upload/v1719331528/logo-amarillo_1_f9r3nu.png)',
   '--mode': 'dark',
-  '--blend-mode': 'overlay'
+  '--blend-mode': 'multiply'
 }
 
 export const lightPalette = {
