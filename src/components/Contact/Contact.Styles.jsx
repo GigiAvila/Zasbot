@@ -23,9 +23,10 @@ export const FormSection = styled.section`
   background-repeat: repeat;
   background-blend-mode: ${({ theme }) => theme.currentTheme['--blend-mode']};
   background-color: ${({ theme }) => theme.currentTheme['--bg-100']};
+  padding-top: 10vh;
 
   @media (max-width: 768px) {
-    padding-top: 10vw;
+    padding-top: 20vh;
   }
 `
 

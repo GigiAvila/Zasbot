@@ -6,9 +6,10 @@ export const MainSection = styled.main`
   background-repeat: repeat;
   background-blend-mode: ${({ theme }) => theme.currentTheme['--blend-mode']};
   background-color: ${({ theme }) => theme.currentTheme['--bg-100']};
+  padding-top: 10vh;
 
-  @media (min-width: 768px) {
-    padding-top: 10vh;
+  @media (max-width: 768px) {
+    padding-top: 20vh;
     background-image: none;
   }
 `
