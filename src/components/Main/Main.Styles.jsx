@@ -9,9 +9,6 @@ export const MainSection = styled.main`
 
   @media (min-width: 768px) {
     padding-top: 10vh;
-    background-image: ${({ theme }) =>
-      theme.currentTheme === 'darkPalette'
-        ? 'none'
-        : 'url(https://res.cloudinary.com/dqdyvyknw/image/upload/v1719592958/Desktop_-_1_3_ke963m.svg)'};
+    background-image: none;
   }
 `
