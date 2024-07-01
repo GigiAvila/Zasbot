@@ -92,6 +92,7 @@ export const WhatsappTextArticle = styled.article`
     @media (max-width: 768px) {
       font-size: 9vw;
       text-align: center;
+      padding-top: 10vh;
     }
   }
   @media (max-width: 768px) {

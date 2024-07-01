@@ -35,7 +35,7 @@ export const ConversationsSection = styled.section`
 
   @media (max-width: 768px) {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     flex-direction: column-reverse;
     gap: 4vh;
   }

@@ -31,9 +31,9 @@ export const SocialMediaSection = styled.section`
 
   @media (max-width: 768px) {
     width: 100vw;
-
     flex-direction: column;
     gap: 4vh;
+    min-height: 100vh;
   }
 `
 
