@@ -8,6 +8,10 @@ export const VideoSection = styled.section`
   justify-content: center;
   align-items: center;
   gap: 5vw;
+
+  @media (max-width: 768px) {
+    min-height: 100vh;
+  }
 `
 
 export const VideoTitles = styled.article`

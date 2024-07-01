@@ -35,9 +35,10 @@ export const ConversationsSection = styled.section`
 
   @media (max-width: 768px) {
     width: 100vw;
-    height: auto;
+    min-height: 100vh;
     flex-direction: column-reverse;
     gap: 4vh;
+    margin-top: 20vh;
   }
 `
 export const ConversationsTitles = styled.article`

@@ -7,6 +7,10 @@ export const BrochureSection = styled.section`
   justify-content: center;
   align-items: center;
   position: relative;
+
+  @media (max-width: 768px) {
+    height: 40vh;
+  }
 `
 
 export const DownloadClipPath = styled.div`
@@ -47,7 +51,8 @@ export const DownloadWrapper = styled.article`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    gap: 5vh;
+    gap: 3vh;
+    padding-top: 10vh;
   }
 `
 

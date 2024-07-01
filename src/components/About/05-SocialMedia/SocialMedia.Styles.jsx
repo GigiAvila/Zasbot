@@ -67,6 +67,15 @@ export const SocialMediaTitles = styled.article`
     animation: ${(props) => (props.animate ? appearFromRight : 'none')} 1.6s
       ease-in-out;
 
+    > span {
+      font-size: 2vw;
+      color: ${({ theme }) => theme.currentTheme['--primary-200']};
+
+      @media (max-width: 768px) {
+        font-size: 6vw;
+      }
+    }
+
     @media (max-width: 768px) {
       font-size: 6vw;
       text-align: center;
@@ -74,7 +83,7 @@ export const SocialMediaTitles = styled.article`
   }
 
   @media (max-width: 768px) {
-    width: 90vw;
+    width: 92vw;
     gap: 4vw;
   }
 `
@@ -86,7 +95,7 @@ export const SocialMediaWrapper = styled.article`
 
   @media (max-width: 768px) {
     width: 95%;
-    height: 40vh;
+    height: 50vh;
   }
 `
 export const TopPart = styled.div`
@@ -134,6 +143,10 @@ export const BottomPart = styled.div`
   align-items: center;
   position: absolute;
   bottom: 0;
+
+  @media (max-width: 768px) {
+    margin-top: 15vh;
+  }
 `
 
 export const PromoImages = styled.div`

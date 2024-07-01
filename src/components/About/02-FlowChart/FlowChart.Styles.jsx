@@ -27,12 +27,12 @@ export const FlowChartSection = styled.section`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
   gap: 2vw;
   padding: 2vw;
 
   @media (max-width: 768px) {
     flex-direction: column;
+    min-height: 100vh;
   }
 `
 
