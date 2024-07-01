@@ -9,7 +9,7 @@ export const MainSection = styled.main`
   padding-top: 10vh;
 
   @media (max-width: 768px) {
-    padding-top: 20vh;
+    padding-top: 10vh;
     background-image: none;
   }
 `
