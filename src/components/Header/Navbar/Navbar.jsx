@@ -88,6 +88,11 @@ const Navbar = () => {
           )}
         </NavElement>
         <NavElement onClick={toggleMenu} theme={{ currentTheme }}>
+          <Link to='/ia' onClick={handleScrollToTop}>
+            IA
+          </Link>
+        </NavElement>
+        <NavElement onClick={toggleMenu} theme={{ currentTheme }}>
           <Link to='/contact' onClick={handleScrollToTop}>
             {NAVBAR_CONTACT}
           </Link>
