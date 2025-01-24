@@ -1,25 +1,27 @@
-import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import {
+  LoginAnchor,
+  LoginButton,
+  MenuIconContainer,
+  Nav,
+  NavElement,
+  NavList
+} from './Navbar.Styles.jsx'
+import {
+  NAVBAR_CONTACT,
+  NAVBAR_INTEGRATIONS,
+  NAVBAR_PRICES,
+  NAVBAR_PRODUCT
+} from '../../../data/SpanishText.js'
+
+import CloseMenuIcon from './Assets/close.svg'
+import MenuIcon from './Assets/menu.svg'
+import { useLocomotiveScroll } from 'react-locomotive-scroll'
+import { useState } from 'react'
+import { useTheme } from '../../../hooks/UseTheme'
+
 // import ColorModeToggle from './ColorMode/ColorModeToggle.jsx'
 // import Language from './Language/Language'
-import {
-  NAVBAR_PRODUCT,
-  NAVBAR_INTEGRATIONS,
-  NAVBAR_CONTACT,
-  NAVBAR_PRICES
-} from '../../../data/SpanishText.js'
-import {
-  Nav,
-  NavList,
-  NavElement,
-  MenuIconContainer,
-  LoginButton,
-  LoginAnchor
-} from './Navbar.Styles.jsx'
-import MenuIcon from './Assets/menu.svg'
-import CloseMenuIcon from './Assets/close.svg'
-import { useTheme } from '../../../hooks/UseTheme'
-import { useLocomotiveScroll } from 'react-locomotive-scroll'
 
 const Navbar = () => {
   const { currentTheme } = useTheme()
@@ -87,11 +89,12 @@ const Navbar = () => {
             <a href='#integrations'>{NAVBAR_INTEGRATIONS}</a>
           )}
         </NavElement>
-        <NavElement onClick={toggleMenu} theme={{ currentTheme }}>
+        {/* <NavElement onClick={toggleMenu} theme={{ currentTheme }}>
           <Link to='/ia' onClick={handleScrollToTop}>
             IA
           </Link>
-        </NavElement>
+        </NavElement> */}
+        `
         <NavElement onClick={toggleMenu} theme={{ currentTheme }}>
           <Link to='/contact' onClick={handleScrollToTop}>
             {NAVBAR_CONTACT}
@@ -107,11 +110,11 @@ const Navbar = () => {
             FAQs
           </Link>
         </NavElement>
-        {/* <NavElement onClick={toggleMenu} theme={{ currentTheme }}>
+        <NavElement onClick={toggleMenu} theme={{ currentTheme }}>
           <Link to='/blog' onClick={handleScrollToTop}>
             Blog
           </Link>
-        </NavElement> */}
+        </NavElement>
         <li>
           <LoginAnchor
             href='https://app.zasbot.com/login'
