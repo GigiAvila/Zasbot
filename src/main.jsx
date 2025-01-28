@@ -1,15 +1,17 @@
+import './index.css'
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Suspense, lazy } from 'react'
+
+import App from './App.jsx'
+import Error404 from './pages/404/Error404.jsx'
+import Loading from './components/Loading/Loading.jsx'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import App from './App.jsx'
-import './index.css'
 import { ThemeProvider } from './context/ThemeContext.jsx'
-import { lazy, Suspense } from 'react'
-import Loading from './components/Loading/Loading.jsx'
-import Error404 from './pages/404/Error404.jsx'
 
 const HomePage = lazy(() => import('./pages/HomePage.jsx'))
-const AIPage = lazy(() => import('./pages/AIPage.jsx'))
+// const AIPage = lazy(() => import('./pages/AIPage.jsx'))
 const PricesPage = lazy(() => import('./pages/PricesPage.jsx'))
 const ContactPage = lazy(() => import('./pages/ContactPage.jsx'))
 const FaqsPage = lazy(() => import('./pages/FaqsPage.jsx'))
@@ -25,7 +27,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <Route path='/' element={<App />}>
               <Route index element={<HomePage />} />
               <Route path='/home' element={<HomePage />} />
-              <Route path='/ai' element={<AIPage />} />
+              {/* <Route path='/ai' element={<AIPage />} /> */}
               <Route path='/prices' element={<PricesPage />} />
               <Route path='/contact' element={<ContactPage />} />
               <Route path='/faqs' element={<FaqsPage />} />
